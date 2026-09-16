@@ -8,37 +8,37 @@ The exemplar bank is a retrieval resource, not a classifier and not a source of 
 
 ## 1. Exemplar Structure
 
+M3 uses the existing M1 `ClaimExemplar` model without modification.
+
 Each exemplar contains:
 
-- `exemplar_id`
+- `id`
 - `claim_type`
-- `canonical_value`
+- `value`
 - `text`
-- `normalized_text`
-- `value_modality`
-- `qualifier`
-- `tags`
 - `source`
-- `bank_version`
-- `active`
+- `version`
+- `created_at`
 
-The structure must remain compatible with the existing `ClaimExemplar` model introduced in M1.
+M3 does not introduce additional exemplar fields.
+
+The exemplar bank is a curated semantic reference set, not a classifier.
 
 ## 2. Coverage
 
-Use the frozen Phase 1 claim vocabulary:
+The frozen Phase 1 vocabulary contains 20 canonical values:
 
-- `FLOODED`
-- `ROAD_ACCESS`
-- `WATER_LEVEL`
-- `PEOPLE_TRAPPED`
-- `BUILDING_DAMAGE`
-- `EVACUATION`
-- `TRAFFIC_STATUS`
+- FLOODED: YES, NO
+- ROAD_ACCESS: PASSABLE, IMPASSABLE
+- WATER_LEVEL: LOW, MODERATE, HIGH, CRITICAL
+- PEOPLE_TRAPPED: YES, NO
+- BUILDING_DAMAGE: NONE, DAMAGED, COLLAPSED
+- EVACUATION: ORDERED, NOT_ORDERED, IN_PROGRESS, COMPLETED
+- TRAFFIC_STATUS: MOVING, SLOW, STOPPED
 
-Every existing canonical value receives exemplar coverage.
+Target: 10 hand-authored exemplars per canonical value.
 
-M3 must not introduce new canonical claim values.
+Total target: 200 exemplars.
 
 ## 3. Exemplar Count
 
