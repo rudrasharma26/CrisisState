@@ -1,0 +1,163 @@
+[
+  {
+    "id": "exm_flooded_yes_01",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "Floodwater has covered the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_02",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "The neighborhood is underwater after the rain.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_03",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "Water has inundated the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_04",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "Flooding is present across the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_05",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "The street has been submerged by floodwater.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_06",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "Standing floodwater is covering the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_07",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "The location is affected by flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_08",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "Rainwater has spilled into the area and caused flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_09",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "Flood conditions are being reported at the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_yes_10",
+    "claim_type": "FLOODED",
+    "value": "YES",
+    "text": "The area has been inundated with water.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_flooded_no_01",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "The area is not flooded.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_02",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "No floodwater is present at the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_03",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "The neighborhood remains free of flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_04",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "Flooding has not reached the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_05",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "There is no inundation in this area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_06",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "The location has not been affected by flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_07",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "No floodwater is covering the street.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_08",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "The site remains dry despite the heavy rain.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_09",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "Reports indicate that the area is not inundated.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_flooded_no_10",
+    "claim_type": "FLOODED",
+    "value": "NO",
+    "text": "Flooding is absent from the reported location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  }
+]
