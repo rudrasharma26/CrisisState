@@ -159,5 +159,166 @@
     "text": "Flooding is absent from the reported location.",
     "source": "HAND_AUTHORED",
     "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_01",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "The road is open to traffic.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_02",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "Vehicles can still pass through the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_03",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "The route remains usable despite the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_04",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "Traffic is able to move along the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_05",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "The street is accessible to vehicles.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_06",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "Cars can get through this section.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_07",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "Road access is currently available.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_08",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "The flooded road can still be crossed.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_09",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "Drivers are still able to use the route.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_passable_10",
+    "claim_type": "ROAD_ACCESS",
+    "value": "PASSABLE",
+    "text": "The road remains open despite standing water.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_road_access_impassable_01",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "The road is completely blocked.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_02",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "Vehicles cannot get through the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_03",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "The route is no longer passable.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_04",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "Floodwater has made the road inaccessible.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_05",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "Traffic cannot move through this stretch.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_06",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "The street is closed because of flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_07",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "Cars are unable to cross the flooded section.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_08",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "Road access has been cut off by floodwater.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_09",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "The route cannot be used at present.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_road_access_impassable_10",
+    "claim_type": "ROAD_ACCESS",
+    "value": "IMPASSABLE",
+    "text": "No vehicles are able to pass through the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
   }
 ]
