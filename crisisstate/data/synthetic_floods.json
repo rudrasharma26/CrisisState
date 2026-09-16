@@ -1,0 +1,119 @@
+[
+  {
+    "id": "rep_001",
+    "text": "Water is building up near Main Road. Vehicles can still pass.",
+    "timestamp": "2026-09-15T08:00:00Z",
+    "source_type": "citizen",
+    "source_id": "citizen_app_12",
+    "latitude": 28.6139,
+    "longitude": 77.2090,
+    "metadata": {
+      "location": "Main Road",
+      "reliability": "medium"
+    }
+  },
+  {
+    "id": "rep_002",
+    "text": "Main Road is now difficult to cross with water on road, but cars can still pass through.",
+    "timestamp": "2026-09-15T08:15:00Z",
+    "source_type": "field_team",
+    "source_id": "scout_unit_4",
+    "latitude": 28.6141,
+    "longitude": 77.2092,
+    "metadata": {
+      "location": "Main Road",
+      "reliability": "high"
+    }
+  },
+  {
+    "id": "rep_003",
+    "text": "Severe flooding on Main Road, water is rising rapidly and road is impassable. Traffic is completely stopped.",
+    "timestamp": "2026-09-15T08:45:00Z",
+    "source_type": "traffic_police",
+    "source_id": "traffic_dispatch",
+    "latitude": 28.6140,
+    "longitude": 77.2091,
+    "metadata": {
+      "location": "Main Road",
+      "reliability": "high"
+    }
+  },
+  {
+    "id": "rep_004",
+    "text": "Main Road checkpoint reports emergency vehicles can still pass safely.",
+    "timestamp": "2026-09-15T09:00:00Z",
+    "source_type": "first_responder",
+    "source_id": "ambulance_unit_8",
+    "latitude": 28.6138,
+    "longitude": 77.2089,
+    "metadata": {
+      "location": "Main Road",
+      "reliability": "high"
+    }
+  },
+  {
+    "id": "rep_005",
+    "text": "Critical water level reached near Main Road, residents stranded and people are trapped in flooded shops.",
+    "timestamp": "2026-09-15T09:30:00Z",
+    "source_type": "citizen",
+    "source_id": "citizen_app_99",
+    "latitude": 28.6142,
+    "longitude": 77.2094,
+    "metadata": {
+      "location": "Main Road",
+      "reliability": "medium"
+    }
+  },
+  {
+    "id": "rep_006",
+    "text": "Sector 4 Underpass is flooded, traffic is completely stopped.",
+    "timestamp": "2026-09-15T08:20:00Z",
+    "source_type": "traffic_camera",
+    "source_id": "cam_sec4_01",
+    "latitude": 28.6500,
+    "longitude": 77.2500,
+    "metadata": {
+      "location": "Sector 4 Underpass",
+      "reliability": "high"
+    }
+  },
+  {
+    "id": "rep_007",
+    "text": "Sector 4 Underpass remains flooded, structural damage to homes and building damaged nearby.",
+    "timestamp": "2026-09-15T08:35:00Z",
+    "source_type": "field_team",
+    "source_id": "survey_team_2",
+    "latitude": 28.6502,
+    "longitude": 77.2503,
+    "metadata": {
+      "location": "Sector 4 Underpass",
+      "reliability": "high"
+    }
+  },
+  {
+    "id": "rep_008",
+    "text": "Sector 4 Underpass drainage pumps active, flood receded and water cleared.",
+    "timestamp": "2026-09-15T11:00:00Z",
+    "source_type": "municipal_ops",
+    "source_id": "pump_station_7",
+    "latitude": 28.6501,
+    "longitude": 77.2501,
+    "metadata": {
+      "location": "Sector 4 Underpass",
+      "reliability": "high"
+    }
+  },
+  {
+    "id": "rep_009",
+    "text": "Sector 4 Underpass traffic resumed and traffic is moving normally.",
+    "timestamp": "2026-09-15T11:30:00Z",
+    "source_type": "traffic_police",
+    "source_id": "traffic_control",
+    "latitude": 28.6500,
+    "longitude": 77.2500,
+    "metadata": {
+      "location": "Sector 4 Underpass",
+      "reliability": "high"
+    }
+  }
+]

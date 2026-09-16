@@ -1,0 +1,8 @@
+{"id": "inc_main_road", "title": "Main Road Corridor Flooding", "location_name": "Main Road", "latitude": 28.6139, "longitude": 77.209, "description": "Severe waterlogging along Main Road arterial corridor."}
+{"id": "inc_sector_4", "title": "Sector 4 Underpass Inundation", "location_name": "Sector 4 Underpass", "latitude": 28.6255, "longitude": 77.225, "description": "Flash flooding and trapped vehicles in Sector 4 Underpass."}
+{"id": "inc_market_sq", "title": "Market Square Submersion", "location_name": "Market Square", "latitude": 28.635, "longitude": 77.195, "description": "Commercial plaza water accumulation and building ground-floor damage."}
+{"id": "inc_riverbank", "title": "Riverbank Colony Breach", "location_name": "Riverbank Colony", "latitude": 28.645, "longitude": 77.235, "description": "River embankment overflow threatening residential colony."}
+{"id": "inc_5th_ave", "title": "5th Avenue Flash Flood", "location_name": "5th Avenue", "latitude": 28.602, "longitude": 77.185, "description": "Heavy storm runoff causing localized drainage failure along 5th Avenue."}
+{"id": "inc_bridge_rd", "title": "Bridge Road Waterlogging", "location_name": "Bridge Road", "latitude": 28.616, "longitude": 77.211, "description": "Bridge Road bridge approach drainage backup near Main Road."}
+{"id": "inc_central_bus", "title": "Central Bus Stand Flooding", "location_name": "Central Bus Stand", "latitude": 28.655, "longitude": 77.21, "description": "Public transit hub inundated with deep standing water."}
+{"id": "inc_highway_9", "title": "Highway 9 Bypass Culvert Overflow", "location_name": "Highway 9 Bypass", "latitude": 28.585, "longitude": 77.245, "description": "Culvert overflow across highway lanes causing transport stoppage."}

@@ -1,0 +1,101 @@
+{"id": "gclm_001_1", "report_id": "eval_rep_001", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_001_2", "report_id": "eval_rep_001", "claim_type": "WATER_LEVEL", "subject": "Main Road", "value": "HIGH", "modality": "ASSERTED"}
+{"id": "gclm_002_1", "report_id": "eval_rep_002", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_002_2", "report_id": "eval_rep_002", "claim_type": "WATER_LEVEL", "subject": "Main Road", "value": "LOW", "modality": "ASSERTED"}
+{"id": "gclm_003_1", "report_id": "eval_rep_003", "claim_type": "WATER_LEVEL", "subject": "Sector 4 Underpass", "value": "CRITICAL", "modality": "ASSERTED"}
+{"id": "gclm_003_2", "report_id": "eval_rep_003", "claim_type": "PEOPLE_TRAPPED", "subject": "Sector 4 Underpass", "value": "YES", "modality": "ASSERTED"}
+{"id": "gclm_004_1", "report_id": "eval_rep_004", "claim_type": "ROAD_ACCESS", "subject": "Sector 4 Underpass", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_004_2", "report_id": "eval_rep_004", "claim_type": "WATER_LEVEL", "subject": "Sector 4 Underpass", "value": "HIGH", "modality": "ASSERTED"}
+{"id": "gclm_005_1", "report_id": "eval_rep_005", "claim_type": "WATER_LEVEL", "subject": "Market Square", "value": "MODERATE", "modality": "ASSERTED"}
+{"id": "gclm_005_2", "report_id": "eval_rep_005", "claim_type": "TRAFFIC_STATUS", "subject": "Market Square", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_006_1", "report_id": "eval_rep_006", "claim_type": "EVACUATION", "subject": "Riverbank Colony", "value": "ORDERED", "modality": "ASSERTED"}
+{"id": "gclm_006_2", "report_id": "eval_rep_006", "claim_type": "WATER_LEVEL", "subject": "Riverbank Colony", "value": "CRITICAL", "modality": "ASSERTED"}
+{"id": "gclm_007_1", "report_id": "eval_rep_007", "claim_type": "ROAD_ACCESS", "subject": "5th Avenue", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_007_2", "report_id": "eval_rep_007", "claim_type": "WATER_LEVEL", "subject": "5th Avenue", "value": "HIGH", "modality": "ASSERTED"}
+{"id": "gclm_007_3", "report_id": "eval_rep_007", "claim_type": "TRAFFIC_STATUS", "subject": "5th Avenue", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_008_1", "report_id": "eval_rep_008", "claim_type": "ROAD_ACCESS", "subject": "Bridge Road", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_009_1", "report_id": "eval_rep_009", "claim_type": "WATER_LEVEL", "subject": "Central Bus Stand", "value": "CRITICAL", "modality": "ASSERTED"}
+{"id": "gclm_010_1", "report_id": "eval_rep_010", "claim_type": "BUILDING_DAMAGE", "subject": "Highway 9 Bypass", "value": "COLLAPSED", "modality": "ASSERTED"}
+{"id": "gclm_010_2", "report_id": "eval_rep_010", "claim_type": "ROAD_ACCESS", "subject": "Highway 9 Bypass", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_011_1", "report_id": "eval_rep_011", "claim_type": "WATER_LEVEL", "subject": "Main Road", "value": "LOW", "modality": "ASSERTED"}
+{"id": "gclm_011_2", "report_id": "eval_rep_011", "claim_type": "TRAFFIC_STATUS", "subject": "Main Road", "value": "MOVING", "modality": "ASSERTED"}
+{"id": "gclm_012_1", "report_id": "eval_rep_012", "claim_type": "PEOPLE_TRAPPED", "subject": "Sector 4 Underpass", "value": "NO", "modality": "ASSERTED"}
+{"id": "gclm_013_1", "report_id": "eval_rep_013", "claim_type": "BUILDING_DAMAGE", "subject": "Riverbank Colony", "value": "DAMAGED", "modality": "ASSERTED"}
+{"id": "gclm_014_1", "report_id": "eval_rep_014", "claim_type": "ROAD_ACCESS", "subject": "Market Square", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_014_2", "report_id": "eval_rep_014", "claim_type": "WATER_LEVEL", "subject": "Market Square", "value": "LOW", "modality": "ASSERTED"}
+{"id": "gclm_015_1", "report_id": "eval_rep_015", "claim_type": "TRAFFIC_STATUS", "subject": "5th Avenue", "value": "SLOW", "modality": "ASSERTED"}
+{"id": "gclm_015_2", "report_id": "eval_rep_015", "claim_type": "WATER_LEVEL", "subject": "5th Avenue", "value": "MODERATE", "modality": "ASSERTED"}
+{"id": "gclm_016_1", "report_id": "eval_rep_016", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_017_1", "report_id": "eval_rep_017", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_018_1", "report_id": "eval_rep_018", "claim_type": "PEOPLE_TRAPPED", "subject": "Riverbank Colony", "value": "YES", "modality": "ASSERTED"}
+{"id": "gclm_019_1", "report_id": "eval_rep_019", "claim_type": "TRAFFIC_STATUS", "subject": "Market Square", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_020_1", "report_id": "eval_rep_020", "claim_type": "WATER_LEVEL", "subject": "Sector 4 Underpass", "value": "CRITICAL", "modality": "ASSERTED"}
+{"id": "gclm_021_1", "report_id": "eval_rep_021", "claim_type": "PEOPLE_TRAPPED", "subject": "5th Avenue", "value": "YES", "modality": "ASSERTED"}
+{"id": "gclm_022_1", "report_id": "eval_rep_022", "claim_type": "WATER_LEVEL", "subject": "Bridge Road", "value": "MODERATE", "modality": "ASSERTED"}
+{"id": "gclm_022_2", "report_id": "eval_rep_022", "claim_type": "ROAD_ACCESS", "subject": "Bridge Road", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_023_1", "report_id": "eval_rep_023", "claim_type": "BUILDING_DAMAGE", "subject": "Market Square", "value": "COLLAPSED", "modality": "ASSERTED"}
+{"id": "gclm_024_1", "report_id": "eval_rep_024", "claim_type": "TRAFFIC_STATUS", "subject": "Central Bus Stand", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_025_1", "report_id": "eval_rep_025", "claim_type": "EVACUATION", "subject": "Riverbank Colony", "value": "ORDERED", "modality": "ASSERTED"}
+{"id": "gclm_026_1", "report_id": "eval_rep_026", "claim_type": "BUILDING_DAMAGE", "subject": "Highway 9 Bypass", "value": "DAMAGED", "modality": "ASSERTED"}
+{"id": "gclm_027_1", "report_id": "eval_rep_027", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_028_1", "report_id": "eval_rep_028", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "PASSABLE", "modality": "NEGATED"}
+{"id": "gclm_029_1", "report_id": "eval_rep_029", "claim_type": "PEOPLE_TRAPPED", "subject": "Sector 4 Underpass", "value": "NO", "modality": "NEGATED"}
+{"id": "gclm_030_1", "report_id": "eval_rep_030", "claim_type": "FLOODED", "subject": "Market Square", "value": "NO", "modality": "NEGATED"}
+{"id": "gclm_031_1", "report_id": "eval_rep_031", "claim_type": "BUILDING_DAMAGE", "subject": "Riverbank Colony", "value": "NONE", "modality": "NEGATED"}
+{"id": "gclm_032_1", "report_id": "eval_rep_032", "claim_type": "ROAD_ACCESS", "subject": "5th Avenue", "value": "PASSABLE", "modality": "NEGATED"}
+{"id": "gclm_033_1", "report_id": "eval_rep_033", "claim_type": "TRAFFIC_STATUS", "subject": "Bridge Road", "value": "SLOW", "modality": "NEGATED"}
+{"id": "gclm_034_1", "report_id": "eval_rep_034", "claim_type": "EVACUATION", "subject": "Central Bus Stand", "value": "NOT_ORDERED", "modality": "NEGATED"}
+{"id": "gclm_035_1", "report_id": "eval_rep_035", "claim_type": "PEOPLE_TRAPPED", "subject": "Highway 9 Bypass", "value": "NO", "modality": "NEGATED"}
+{"id": "gclm_036_1", "report_id": "eval_rep_036", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "IMPASSABLE", "modality": "AMBIGUOUS"}
+{"id": "gclm_037_1", "report_id": "eval_rep_037", "claim_type": "PEOPLE_TRAPPED", "subject": "Sector 4 Underpass", "value": "YES", "modality": "AMBIGUOUS"}
+{"id": "gclm_038_1", "report_id": "eval_rep_038", "claim_type": "WATER_LEVEL", "subject": "Market Square", "value": "CRITICAL", "modality": "AMBIGUOUS"}
+{"id": "gclm_039_1", "report_id": "eval_rep_039", "claim_type": "BUILDING_DAMAGE", "subject": "Riverbank Colony", "value": "COLLAPSED", "modality": "AMBIGUOUS"}
+{"id": "gclm_040_1", "report_id": "eval_rep_040", "claim_type": "ROAD_ACCESS", "subject": "5th Avenue", "value": "IMPASSABLE", "modality": "AMBIGUOUS"}
+{"id": "gclm_041_1", "report_id": "eval_rep_041", "claim_type": "TRAFFIC_STATUS", "subject": "Bridge Road", "value": "STOPPED", "modality": "AMBIGUOUS"}
+{"id": "gclm_042_1", "report_id": "eval_rep_042", "claim_type": "WATER_LEVEL", "subject": "Central Bus Stand", "value": "HIGH", "modality": "AMBIGUOUS"}
+{"id": "gclm_043_1", "report_id": "eval_rep_043", "claim_type": "EVACUATION", "subject": "Highway 9 Bypass", "value": "ORDERED", "modality": "AMBIGUOUS"}
+{"id": "gclm_044_1", "report_id": "eval_rep_044", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "IMPASSABLE", "modality": "QUALIFIED"}
+{"id": "gclm_045_1", "report_id": "eval_rep_045", "claim_type": "ROAD_ACCESS", "subject": "Sector 4 Underpass", "value": "IMPASSABLE", "modality": "QUALIFIED"}
+{"id": "gclm_046_1", "report_id": "eval_rep_046", "claim_type": "WATER_LEVEL", "subject": "Market Square", "value": "HIGH", "modality": "QUALIFIED"}
+{"id": "gclm_047_1", "report_id": "eval_rep_047", "claim_type": "EVACUATION", "subject": "Riverbank Colony", "value": "IN_PROGRESS", "modality": "QUALIFIED"}
+{"id": "gclm_048_1", "report_id": "eval_rep_048", "claim_type": "ROAD_ACCESS", "subject": "5th Avenue", "value": "PASSABLE", "modality": "QUALIFIED"}
+{"id": "gclm_049_1", "report_id": "eval_rep_049", "claim_type": "TRAFFIC_STATUS", "subject": "Bridge Road", "value": "SLOW", "modality": "QUALIFIED"}
+{"id": "gclm_050_1", "report_id": "eval_rep_050", "claim_type": "FLOODED", "subject": "Central Bus Stand", "value": "YES", "modality": "QUALIFIED"}
+{"id": "gclm_051_1", "report_id": "eval_rep_051", "claim_type": "ROAD_ACCESS", "subject": "Highway 9 Bypass", "value": "IMPASSABLE", "modality": "QUALIFIED"}
+{"id": "gclm_052_1", "report_id": "eval_rep_052", "claim_type": "ROAD_ACCESS", "subject": "Bridge Road", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_053_1", "report_id": "eval_rep_053", "claim_type": "TRAFFIC_STATUS", "subject": "Main Road", "value": "SLOW", "modality": "ASSERTED"}
+{"id": "gclm_054_1", "report_id": "eval_rep_054", "claim_type": "TRAFFIC_STATUS", "subject": "Bridge Road", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_055_1", "report_id": "eval_rep_055", "claim_type": "WATER_LEVEL", "subject": "Main Road", "value": "HIGH", "modality": "ASSERTED"}
+{"id": "gclm_056_1", "report_id": "eval_rep_056", "claim_type": "WATER_LEVEL", "subject": "Bridge Road", "value": "MODERATE", "modality": "ASSERTED"}
+{"id": "gclm_056_2", "report_id": "eval_rep_056", "claim_type": "ROAD_ACCESS", "subject": "Bridge Road", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_057_1", "report_id": "eval_rep_057", "claim_type": "BUILDING_DAMAGE", "subject": "Main Road", "value": "DAMAGED", "modality": "ASSERTED"}
+{"id": "gclm_058_1", "report_id": "eval_rep_058", "claim_type": "ROAD_ACCESS", "subject": "Bridge Road", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_059_1", "report_id": "eval_rep_059", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_060_1", "report_id": "eval_rep_060", "claim_type": "WATER_LEVEL", "subject": "Central Bus Stand", "value": "HIGH", "modality": "ASSERTED"}
+{"id": "gclm_060_2", "report_id": "eval_rep_060", "claim_type": "TRAFFIC_STATUS", "subject": "Central Bus Stand", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_061_1", "report_id": "eval_rep_061", "claim_type": "WATER_LEVEL", "subject": "Highway 9 Bypass", "value": "HIGH", "modality": "ASSERTED"}
+{"id": "gclm_061_2", "report_id": "eval_rep_061", "claim_type": "TRAFFIC_STATUS", "subject": "Highway 9 Bypass", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_062_1", "report_id": "eval_rep_062", "claim_type": "WATER_LEVEL", "subject": "Sector 4 Underpass", "value": "HIGH", "modality": "ASSERTED"}
+{"id": "gclm_062_2", "report_id": "eval_rep_062", "claim_type": "TRAFFIC_STATUS", "subject": "Sector 4 Underpass", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_063_1", "report_id": "eval_rep_063", "claim_type": "WATER_LEVEL", "subject": "Riverbank Colony", "value": "CRITICAL", "modality": "ASSERTED"}
+{"id": "gclm_064_1", "report_id": "eval_rep_064", "claim_type": "WATER_LEVEL", "subject": "Market Square", "value": "CRITICAL", "modality": "ASSERTED"}
+{"id": "gclm_065_1", "report_id": "eval_rep_065", "claim_type": "ROAD_ACCESS", "subject": "5th Avenue", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_065_2", "report_id": "eval_rep_065", "claim_type": "WATER_LEVEL", "subject": "5th Avenue", "value": "CRITICAL", "modality": "ASSERTED"}
+{"id": "gclm_066_1", "report_id": "eval_rep_066", "claim_type": "ROAD_ACCESS", "subject": "Central Bus Stand", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_066_2", "report_id": "eval_rep_066", "claim_type": "WATER_LEVEL", "subject": "Central Bus Stand", "value": "CRITICAL", "modality": "ASSERTED"}
+{"id": "gclm_067_1", "report_id": "eval_rep_067", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_068_1", "report_id": "eval_rep_068", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_069_1", "report_id": "eval_rep_069", "claim_type": "PEOPLE_TRAPPED", "subject": "Sector 4 Underpass", "value": "YES", "modality": "ASSERTED"}
+{"id": "gclm_070_1", "report_id": "eval_rep_070", "claim_type": "PEOPLE_TRAPPED", "subject": "Sector 4 Underpass", "value": "NO", "modality": "ASSERTED"}
+{"id": "gclm_071_1", "report_id": "eval_rep_071", "claim_type": "TRAFFIC_STATUS", "subject": "5th Avenue", "value": "MOVING", "modality": "ASSERTED"}
+{"id": "gclm_072_1", "report_id": "eval_rep_072", "claim_type": "TRAFFIC_STATUS", "subject": "5th Avenue", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_073_1", "report_id": "eval_rep_073", "claim_type": "EVACUATION", "subject": "Riverbank Colony", "value": "ORDERED", "modality": "ASSERTED"}
+{"id": "gclm_074_1", "report_id": "eval_rep_074", "claim_type": "EVACUATION", "subject": "Riverbank Colony", "value": "NOT_ORDERED", "modality": "ASSERTED"}
+{"id": "gclm_075_1", "report_id": "eval_rep_075", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_076_1", "report_id": "eval_rep_076", "claim_type": "ROAD_ACCESS", "subject": "Main Road", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_076_2", "report_id": "eval_rep_076", "claim_type": "WATER_LEVEL", "subject": "Main Road", "value": "LOW", "modality": "ASSERTED"}
+{"id": "gclm_077_1", "report_id": "eval_rep_077", "claim_type": "ROAD_ACCESS", "subject": "Sector 4 Underpass", "value": "IMPASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_078_1", "report_id": "eval_rep_078", "claim_type": "ROAD_ACCESS", "subject": "Sector 4 Underpass", "value": "PASSABLE", "modality": "ASSERTED"}
+{"id": "gclm_079_1", "report_id": "eval_rep_079", "claim_type": "TRAFFIC_STATUS", "subject": "Market Square", "value": "STOPPED", "modality": "ASSERTED"}
+{"id": "gclm_080_1", "report_id": "eval_rep_080", "claim_type": "TRAFFIC_STATUS", "subject": "Market Square", "value": "MOVING", "modality": "ASSERTED"}
+{"id": "gclm_080_2", "report_id": "eval_rep_080", "claim_type": "WATER_LEVEL", "subject": "Market Square", "value": "LOW", "modality": "ASSERTED"}
