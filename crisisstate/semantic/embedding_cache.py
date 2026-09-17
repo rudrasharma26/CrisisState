@@ -4,21 +4,16 @@ from __future__ import annotations
 
 import hashlib
 import sqlite3
+from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Iterator
 
 import numpy as np
 
 
 class EmbeddingCache:
-    """Persistent cache for deterministic text embeddings.
-
-    Cache identity is based on:
-    - model name
-    - normalized text
-
-    Embeddings are stored as float32 BLOBs in SQLite.
-    """
+    """Persistent cache for deterministic text embeddings."""
 
     EXPECTED_DIMENSION = 384
 
@@ -27,13 +22,23 @@ class EmbeddingCache:
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._initialize()
 
-    def _connect(self) -> sqlite3.Connection:
+    @contextmanager
+    def _connection(self) -> Iterator[sqlite3.Connection]:
+        """Open, commit/rollback, and always close a SQLite connection."""
         connection = sqlite3.connect(self.db_path)
         connection.row_factory = sqlite3.Row
-        return connection
+
+        try:
+            yield connection
+            connection.commit()
+        except Exception:
+            connection.rollback()
+            raise
+        finally:
+            connection.close()
 
     def _initialize(self) -> None:
-        with self._connect() as connection:
+        with self._connection() as connection:
             connection.execute(
                 """
                 CREATE TABLE IF NOT EXISTS embedding_cache (
@@ -71,7 +76,7 @@ class EmbeddingCache:
 
         cache_key = self._make_key(model_name, normalized_text)
 
-        with self._connect() as connection:
+        with self._connection() as connection:
             row = connection.execute(
                 """
                 SELECT dimension, dtype, embedding
@@ -128,7 +133,7 @@ class EmbeddingCache:
         cache_key = self._make_key(model_name, normalized_text)
         created_at = datetime.now(timezone.utc).isoformat()
 
-        with self._connect() as connection:
+        with self._connection() as connection:
             connection.execute(
                 """
                 INSERT INTO embedding_cache (
@@ -163,15 +168,12 @@ class EmbeddingCache:
         model_name: str,
         normalized_text: str,
     ) -> bool:
-        """Delete one cached embedding.
-
-        Returns True when an entry was deleted.
-        """
+        """Delete one cached embedding."""
         self._validate_inputs(model_name, normalized_text)
 
         cache_key = self._make_key(model_name, normalized_text)
 
-        with self._connect() as connection:
+        with self._connection() as connection:
             cursor = connection.execute(
                 """
                 DELETE FROM embedding_cache
@@ -180,16 +182,16 @@ class EmbeddingCache:
                 (cache_key,),
             )
 
-        return cursor.rowcount > 0
+            return cursor.rowcount > 0
 
     def clear(self) -> None:
         """Remove all cached embeddings."""
-        with self._connect() as connection:
+        with self._connection() as connection:
             connection.execute("DELETE FROM embedding_cache")
 
     def count(self) -> int:
         """Return the number of cached embeddings."""
-        with self._connect() as connection:
+        with self._connection() as connection:
             row = connection.execute(
                 "SELECT COUNT(*) AS count FROM embedding_cache"
             ).fetchone()

@@ -1,0 +1,36 @@
+{
+  "evaluation": "M4 isolated semantic extraction",
+  "baseline_tag": "v1.0.0-phase1-frozen",
+  "dataset_version": "v1.0-seed-corpus",
+  "threshold": 0.67,
+  "margin_threshold": 0.04,
+  "exemplar_count": 200,
+  "report_count": 80,
+  "m4_claim_extraction": {
+    "precision": 0.7386,
+    "recall": 0.6436,
+    "f1": 0.6878
+  },
+  "m4_claim_normalization_accuracy": 0.9077,
+  "m4_modality_accuracy": 0.7692,
+  "baseline_claim_extraction": {
+    "precision": 0.8375,
+    "recall": 0.6634,
+    "f1": 0.7403
+  },
+  "baseline_claim_normalization_accuracy": 0.91,
+  "baseline_modality_accuracy": 0.806,
+  "delta": {
+    "precision": -0.0989,
+    "recall": -0.0198,
+    "f1": -0.0525,
+    "normalization_accuracy": -0.0023,
+    "modality_accuracy": -0.0368
+  },
+  "semantic_claims": 6,
+  "lexical_claims": 82,
+  "unresolved_spans": 18,
+  "determinism": "PASS",
+  "incident_matching": "NOT_REEVALUATED \u2014 M4 remains isolated; production incident matcher is unchanged",
+  "contradiction_detection": "NOT_REEVALUATED \u2014 M4 remains isolated; production contradiction engine is unchanged"
+}
