@@ -62,3 +62,28 @@ Record:
 - threshold-sweep results
 - rationale
 - final configuration version
+
+## Provisional M4 Candidate Gate
+
+Based on the 100-probe calibration sweep, the provisional candidate-generation gate is:
+
+- cosine similarity >= 0.67
+- top-1 vs top-2 similarity margin >= 0.04
+
+Calibration result:
+
+- Accepted: 41/100
+- Correct accepted: 33/100
+- Wrong accepted: 8/100
+- Correct coverage: 33%
+- Accepted accuracy: 80.49%
+
+This is a candidate-generation gate only.
+
+It is NOT the final semantic adjudication threshold.
+
+M4 deterministic adjudication must apply additional claim-type compatibility,
+lexical evidence, ambiguity checks, and rejection rules before creating a
+semantic claim.
+
+The gate remains subject to M4 evaluation against the frozen Phase 1 baseline.
