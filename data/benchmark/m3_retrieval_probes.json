@@ -244,12 +244,12 @@
     "expected_claim_type": "EVACUATION",
     "expected_value": "ORDERED"
   },
-  {
-    "probe_id": "probe_evacuation_ordered_02",
-    "text": "A formal evacuation instruction is now active.",
-    "expected_claim_type": "EVACUATION",
-    "expected_value": "ORDERED"
-  },
+ {
+  "probe_id": "probe_evacuation_ordered_02",
+  "text": "Officials have mandated that residents leave the flooded zone.",
+  "expected_claim_type": "EVACUATION",
+  "expected_value": "ORDERED"
+},
   {
     "probe_id": "probe_evacuation_ordered_03",
     "text": "Authorities have mandated that people move out of the zone.",
