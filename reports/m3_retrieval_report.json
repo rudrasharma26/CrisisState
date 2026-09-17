@@ -1,0 +1,2653 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "device": "cpu",
+  "exemplar_count": 200,
+  "probe_count": 60,
+  "normalization": "lowercase + whitespace normalization",
+  "similarity": "cosine",
+  "recall_at_1": 0.8,
+  "recall_at_3": 0.9333333333333333,
+  "recall_at_5": 0.9833333333333333,
+  "mrr": 0.87,
+  "wrong_value_retrieval_rate": 0.2,
+  "top1_confusions": [
+    {
+      "expected": "WATER_LEVEL:MODERATE",
+      "predicted": "WATER_LEVEL:HIGH",
+      "count": 2
+    },
+    {
+      "expected": "ROAD_ACCESS:IMPASSABLE",
+      "predicted": "ROAD_ACCESS:PASSABLE",
+      "count": 1
+    },
+    {
+      "expected": "WATER_LEVEL:LOW",
+      "predicted": "FLOODED:YES",
+      "count": 1
+    },
+    {
+      "expected": "WATER_LEVEL:HIGH",
+      "predicted": "WATER_LEVEL:CRITICAL",
+      "count": 1
+    },
+    {
+      "expected": "WATER_LEVEL:CRITICAL",
+      "predicted": "WATER_LEVEL:MODERATE",
+      "count": 1
+    },
+    {
+      "expected": "BUILDING_DAMAGE:NONE",
+      "predicted": "BUILDING_DAMAGE:DAMAGED",
+      "count": 1
+    },
+    {
+      "expected": "BUILDING_DAMAGE:DAMAGED",
+      "predicted": "BUILDING_DAMAGE:NONE",
+      "count": 1
+    },
+    {
+      "expected": "EVACUATION:ORDERED",
+      "predicted": "EVACUATION:COMPLETED",
+      "count": 1
+    },
+    {
+      "expected": "EVACUATION:ORDERED",
+      "predicted": "PEOPLE_TRAPPED:NO",
+      "count": 1
+    },
+    {
+      "expected": "EVACUATION:IN_PROGRESS",
+      "predicted": "PEOPLE_TRAPPED:NO",
+      "count": 1
+    },
+    {
+      "expected": "TRAFFIC_STATUS:MOVING",
+      "predicted": "TRAFFIC_STATUS:STOPPED",
+      "count": 1
+    }
+  ],
+  "rankings": [
+    {
+      "probe_id": "probe_flooded_yes_01",
+      "expected_claim_type": "FLOODED",
+      "expected_value": "YES",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_flooded_yes_01",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.6321840882301331
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_flooded_yes_10",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.6248611807823181
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_flooded_yes_04",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.604932427406311
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_flooded_yes_03",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.5995715856552124
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_flooded_no_01",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.5876155495643616
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_flooded_yes_02",
+      "expected_claim_type": "FLOODED",
+      "expected_value": "YES",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_flooded_yes_04",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.829641580581665
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_flooded_yes_01",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.8067185878753662
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_moderate_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.7854533195495605
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_critical_10",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.7765190005302429
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_flooded_yes_09",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.7496979832649231
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_flooded_yes_03",
+      "expected_claim_type": "FLOODED",
+      "expected_value": "YES",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_flooded_yes_07",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.8804641962051392
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_moderate_07",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.8299775719642639
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_flooded_yes_04",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.75614994764328
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_flooded_yes_09",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.7379471659660339
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_flooded_no_10",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.705963671207428
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_flooded_no_01",
+      "expected_claim_type": "FLOODED",
+      "expected_value": "NO",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_flooded_no_03",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.823874831199646
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_flooded_no_01",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.6469588875770569
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_people_trapped_yes_09",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.6437095999717712
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_people_trapped_yes_06",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.6429745554924011
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_people_trapped_no_05",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6218952536582947
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_flooded_no_02",
+      "expected_claim_type": "FLOODED",
+      "expected_value": "NO",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_flooded_no_09",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.6267822980880737
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_flooded_no_04",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.5206878185272217
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_flooded_no_05",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.5081484913825989
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_flooded_no_10",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.45142054557800293
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_none_01",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.4274119734764099
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_flooded_no_03",
+      "expected_claim_type": "FLOODED",
+      "expected_value": "NO",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_flooded_no_02",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.8702530860900879
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_flooded_no_06",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.8470813035964966
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_flooded_no_01",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.8225991129875183
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_flooded_no_07",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.8048501014709473
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_people_trapped_no_07",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.7866255044937134
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_road_access_passable_01",
+      "expected_claim_type": "ROAD_ACCESS",
+      "expected_value": "PASSABLE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_road_access_passable_09",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.8475416898727417
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_traffic_status_moving_09",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7681355476379395
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_road_access_passable_02",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7637723088264465
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_road_access_impassable_03",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.7112743258476257
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_stopped_02",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.6986277103424072
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_road_access_passable_02",
+      "expected_claim_type": "ROAD_ACCESS",
+      "expected_value": "PASSABLE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_road_access_passable_05",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7927969098091125
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_traffic_status_moving_09",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.6822851896286011
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_road_access_passable_02",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.6792535781860352
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_traffic_status_moving_03",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.5793764591217041
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_moving_04",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.5777432918548584
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_road_access_passable_03",
+      "expected_claim_type": "ROAD_ACCESS",
+      "expected_value": "PASSABLE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_road_access_passable_04",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7049446702003479
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_road_access_passable_02",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.6889965534210205
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_moving_09",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.6634051203727722
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_road_access_passable_01",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.6617138981819153
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_moving_08",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.6533960103988647
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_road_access_impassable_01",
+      "expected_claim_type": "ROAD_ACCESS",
+      "expected_value": "IMPASSABLE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_road_access_impassable_07",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.810592770576477
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_road_access_impassable_02",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.7122225761413574
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_road_access_passable_08",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7074182629585266
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_road_access_impassable_10",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.6710028648376465
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_road_access_impassable_04",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.6683379411697388
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_road_access_impassable_02",
+      "expected_claim_type": "ROAD_ACCESS",
+      "expected_value": "IMPASSABLE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_road_access_passable_05",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7167839407920837
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_road_access_impassable_01",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.6854291558265686
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_road_access_impassable_04",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.6550363898277283
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_road_access_impassable_02",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.6540490388870239
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_stopped_08",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.6495946049690247
+        }
+      ],
+      "first_correct_rank": 2
+    },
+    {
+      "probe_id": "probe_road_access_impassable_03",
+      "expected_claim_type": "ROAD_ACCESS",
+      "expected_value": "IMPASSABLE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_road_access_impassable_02",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.6998227834701538
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_road_access_impassable_07",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.6858026385307312
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_road_access_impassable_10",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.6681305766105652
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_traffic_status_stopped_08",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.6550378203392029
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_road_access_passable_06",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.6459280848503113
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_water_level_low_01",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "LOW",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_low_10",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.7338895201683044
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_low_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.6850255727767944
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_moderate_09",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.6689826250076294
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_low_03",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.6676949262619019
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_low_09",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.6619426012039185
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_water_level_low_02",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "LOW",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_low_05",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.9108608961105347
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_low_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.7949410080909729
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_low_07",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.7900587916374207
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_critical_03",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.7802519202232361
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_high_05",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.7752685546875
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_water_level_low_03",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "LOW",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_flooded_yes_01",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.7098760604858398
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_flooded_yes_06",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.6742309331893921
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_moderate_02",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.665073812007904
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_high_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.6634092330932617
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_low_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.6532343626022339
+        }
+      ],
+      "first_correct_rank": 5
+    },
+    {
+      "probe_id": "probe_water_level_moderate_01",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "MODERATE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_high_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.8628751039505005
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_critical_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.836209774017334
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_moderate_08",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.8351099491119385
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_moderate_02",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.8210901618003845
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_moderate_10",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.8001164197921753
+        }
+      ],
+      "first_correct_rank": 3
+    },
+    {
+      "probe_id": "probe_water_level_moderate_02",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "MODERATE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_high_07",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.9500986337661743
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_low_05",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.7603906393051147
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_high_05",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.7583721876144409
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_moderate_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.7573729157447815
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_low_07",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.7317975759506226
+        }
+      ],
+      "first_correct_rank": 4
+    },
+    {
+      "probe_id": "probe_water_level_moderate_03",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "MODERATE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_moderate_09",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.8157902359962463
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_moderate_05",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.8113507032394409
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_low_01",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.6997803449630737
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_moderate_01",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.6824417114257812
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_low_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.6713468432426453
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_water_level_high_01",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "HIGH",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_high_09",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.827888011932373
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_high_10",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.7367334365844727
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_low_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.7254252433776855
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_moderate_10",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.6888141632080078
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_high_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.6522203683853149
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_water_level_high_02",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "HIGH",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_critical_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.8314526677131653
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_critical_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.7828280925750732
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_moderate_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.7792863249778748
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_high_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.775592029094696
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_flooded_yes_04",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.7447319626808167
+        }
+      ],
+      "first_correct_rank": 4
+    },
+    {
+      "probe_id": "probe_water_level_high_03",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "HIGH",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_high_02",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.8412583470344543
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_critical_10",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.8067561388015747
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_moderate_02",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.7634101510047913
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_low_03",
+          "claim_type": "WATER_LEVEL",
+          "value": "LOW",
+          "score": 0.7629935145378113
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_high_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.754902184009552
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_water_level_critical_01",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "CRITICAL",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_moderate_08",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.9042720198631287
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_critical_03",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.861058235168457
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_critical_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.8217176198959351
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_moderate_09",
+          "claim_type": "WATER_LEVEL",
+          "value": "MODERATE",
+          "score": 0.8083069920539856
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_high_05",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.8071129322052002
+        }
+      ],
+      "first_correct_rank": 2
+    },
+    {
+      "probe_id": "probe_water_level_critical_02",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "CRITICAL",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_critical_08",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.9055978655815125
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_critical_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.8320322036743164
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_high_06",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.8003361225128174
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_critical_04",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.7937799692153931
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_critical_02",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.7822421789169312
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_water_level_critical_03",
+      "expected_claim_type": "WATER_LEVEL",
+      "expected_value": "CRITICAL",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_water_level_critical_10",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.7423574328422546
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_water_level_critical_01",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.6922712326049805
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_water_level_high_07",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.6778594255447388
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_water_level_high_01",
+          "claim_type": "WATER_LEVEL",
+          "value": "HIGH",
+          "score": 0.643976628780365
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_water_level_critical_03",
+          "claim_type": "WATER_LEVEL",
+          "value": "CRITICAL",
+          "score": 0.6384069919586182
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_people_trapped_yes_01",
+      "expected_claim_type": "PEOPLE_TRAPPED",
+      "expected_value": "YES",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_people_trapped_yes_02",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.7901932001113892
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_people_trapped_yes_05",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.7225853800773621
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_people_trapped_yes_10",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.6719315052032471
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_people_trapped_yes_07",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.6385838389396667
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_people_trapped_no_02",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6185671091079712
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_people_trapped_yes_02",
+      "expected_claim_type": "PEOPLE_TRAPPED",
+      "expected_value": "YES",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_people_trapped_yes_08",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.7456778287887573
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_people_trapped_no_04",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6934769153594971
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_people_trapped_no_08",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6556860208511353
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_people_trapped_yes_06",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.6421167850494385
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_people_trapped_yes_03",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.623763918876648
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_people_trapped_yes_03",
+      "expected_claim_type": "PEOPLE_TRAPPED",
+      "expected_value": "YES",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_people_trapped_yes_06",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.7603776454925537
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_people_trapped_yes_07",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.6868916153907776
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_flooded_no_04",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.675876796245575
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_people_trapped_no_05",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6720669269561768
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_people_trapped_yes_09",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.6653844118118286
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_people_trapped_no_01",
+      "expected_claim_type": "PEOPLE_TRAPPED",
+      "expected_value": "NO",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_people_trapped_no_02",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.9252332448959351
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_people_trapped_yes_02",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.8206512928009033
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_ordered_10",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.7726930379867554
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_people_trapped_no_04",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.7437967658042908
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_ordered_04",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.7065463066101074
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_people_trapped_no_02",
+      "expected_claim_type": "PEOPLE_TRAPPED",
+      "expected_value": "NO",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_people_trapped_no_03",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.8040879368782043
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_people_trapped_no_09",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.777711033821106
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_people_trapped_no_01",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6151829957962036
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_people_trapped_no_06",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6103006601333618
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_none_04",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.523362398147583
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_people_trapped_no_03",
+      "expected_claim_type": "PEOPLE_TRAPPED",
+      "expected_value": "NO",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_people_trapped_no_08",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.829102635383606
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_in_progress_06",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.7656653523445129
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_people_trapped_no_02",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6703212857246399
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_in_progress_03",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.6645123958587646
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_people_trapped_no_04",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6476448774337769
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_building_damage_none_01",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "NONE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_none_09",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.8328357934951782
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_flooded_no_02",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.817987859249115
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_none_04",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.8171193599700928
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_building_damage_none_07",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.7877388000488281
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_none_01",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.7600509524345398
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_building_damage_none_02",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "NONE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_damaged_03",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.7090731263160706
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_building_damage_none_10",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.6924557089805603
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_none_05",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.5735151171684265
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_building_damage_damaged_09",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.5432823300361633
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_none_03",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.5249700546264648
+        }
+      ],
+      "first_correct_rank": 2
+    },
+    {
+      "probe_id": "probe_building_damage_none_03",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "NONE",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_none_04",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.8591763973236084
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_building_damage_none_07",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.8034676313400269
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_none_01",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.7854900360107422
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_building_damage_none_05",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.6140862703323364
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_none_09",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.6102563142776489
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_building_damage_damaged_01",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "DAMAGED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_damaged_05",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.9844471216201782
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_building_damage_damaged_02",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.903659999370575
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_damaged_01",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.852347731590271
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_building_damage_none_06",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.7970315217971802
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_collapsed_06",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "COLLAPSED",
+          "score": 0.775994598865509
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_building_damage_damaged_02",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "DAMAGED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_damaged_04",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.8222023248672485
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_building_damage_damaged_07",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.7675961256027222
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_damaged_03",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.7472546100616455
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_building_damage_damaged_09",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.6016241908073425
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_damaged_10",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.5988776683807373
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_building_damage_damaged_03",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "DAMAGED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_none_03",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.7916020154953003
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_building_damage_damaged_01",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.7465523481369019
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_damaged_08",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.7081384658813477
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_flooded_yes_07",
+          "claim_type": "FLOODED",
+          "value": "YES",
+          "score": 0.7037297487258911
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_damaged_05",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.6991863250732422
+        }
+      ],
+      "first_correct_rank": 2
+    },
+    {
+      "probe_id": "probe_building_damage_collapsed_01",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "COLLAPSED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_collapsed_02",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "COLLAPSED",
+          "score": 0.8717899322509766
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_building_damage_collapsed_06",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "COLLAPSED",
+          "score": 0.8281899094581604
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_damaged_05",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.80274897813797
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_building_damage_damaged_02",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.7963705062866211
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_damaged_01",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.749438464641571
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_building_damage_collapsed_02",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "COLLAPSED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_collapsed_09",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "COLLAPSED",
+          "score": 0.6429537534713745
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_building_damage_damaged_10",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.591711163520813
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_none_08",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.5806485414505005
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_building_damage_collapsed_05",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "COLLAPSED",
+          "score": 0.5724481344223022
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_none_10",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.5556923151016235
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_building_damage_collapsed_03",
+      "expected_claim_type": "BUILDING_DAMAGE",
+      "expected_value": "COLLAPSED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_building_damage_collapsed_07",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "COLLAPSED",
+          "score": 0.9005662202835083
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_building_damage_none_10",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.6861714720726013
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_building_damage_none_07",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "NONE",
+          "score": 0.6782664656639099
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_building_damage_damaged_09",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.6514002680778503
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_building_damage_damaged_10",
+          "claim_type": "BUILDING_DAMAGE",
+          "value": "DAMAGED",
+          "score": 0.647875189781189
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_ordered_01",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "ORDERED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_ordered_04",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.8041565418243408
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_ordered_10",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.7958616018295288
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_people_trapped_no_02",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.779693067073822
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_ordered_02",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.6837324500083923
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_not_ordered_10",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.6706109642982483
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_ordered_02",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "ORDERED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_completed_01",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.7672237157821655
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_in_progress_05",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.7593611478805542
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_in_progress_02",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.7553057670593262
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_completed_04",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.7519341111183167
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_in_progress_07",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.7301282286643982
+        }
+      ],
+      "first_correct_rank": null
+    },
+    {
+      "probe_id": "probe_evacuation_ordered_03",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "ORDERED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_people_trapped_no_02",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.6550596356391907
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_ordered_08",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.647977888584137
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_ordered_04",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.6245625019073486
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_in_progress_04",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.6122985482215881
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_ordered_10",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.6100501418113708
+        }
+      ],
+      "first_correct_rank": 2
+    },
+    {
+      "probe_id": "probe_evacuation_not_ordered_01",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "NOT_ORDERED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_not_ordered_09",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.8994918465614319
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_not_ordered_01",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.8523417115211487
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_not_ordered_08",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.7985575795173645
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_not_ordered_03",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.7798950672149658
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_not_ordered_05",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.779554545879364
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_not_ordered_02",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "NOT_ORDERED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_not_ordered_10",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.9907862544059753
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_not_ordered_02",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.8087360262870789
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_not_ordered_04",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.786324143409729
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_not_ordered_07",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.7518317699432373
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_not_ordered_06",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.7378062605857849
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_not_ordered_03",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "NOT_ORDERED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_not_ordered_01",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.9113454222679138
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_not_ordered_09",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.8521614074707031
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_not_ordered_03",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.8382351398468018
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_not_ordered_08",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.7996142506599426
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_not_ordered_05",
+          "claim_type": "EVACUATION",
+          "value": "NOT_ORDERED",
+          "score": 0.7957449555397034
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_in_progress_01",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "IN_PROGRESS",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_people_trapped_no_02",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "NO",
+          "score": 0.7589905261993408
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_ordered_10",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.7331949472427368
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_in_progress_04",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.719902515411377
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_in_progress_08",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.6783589124679565
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_people_trapped_yes_10",
+          "claim_type": "PEOPLE_TRAPPED",
+          "value": "YES",
+          "score": 0.6630908846855164
+        }
+      ],
+      "first_correct_rank": 3
+    },
+    {
+      "probe_id": "probe_evacuation_in_progress_02",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "IN_PROGRESS",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_in_progress_10",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.8159404993057251
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_completed_07",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.7578402757644653
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_ordered_06",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.7574867606163025
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_completed_10",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.7417770028114319
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_in_progress_06",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.710649847984314
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_in_progress_03",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "IN_PROGRESS",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_in_progress_05",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.9819645881652832
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_in_progress_02",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.923059344291687
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_completed_04",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.8659917712211609
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_completed_01",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.8086680173873901
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_in_progress_07",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.7738558053970337
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_completed_01",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "COMPLETED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_completed_03",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.8297717571258545
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_ordered_08",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.7276167869567871
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_completed_10",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.7186024188995361
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_ordered_02",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.6648750901222229
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_in_progress_08",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.6638076901435852
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_completed_02",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "COMPLETED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_completed_10",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.6916845440864563
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_completed_07",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.6681426763534546
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_completed_06",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.6430283784866333
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_completed_09",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.6247966885566711
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_in_progress_07",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.6208893060684204
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_evacuation_completed_03",
+      "expected_claim_type": "EVACUATION",
+      "expected_value": "COMPLETED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_evacuation_completed_07",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.9293608069419861
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_evacuation_ordered_06",
+          "claim_type": "EVACUATION",
+          "value": "ORDERED",
+          "score": 0.7656364440917969
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_evacuation_completed_10",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.7483970522880554
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_evacuation_in_progress_10",
+          "claim_type": "EVACUATION",
+          "value": "IN_PROGRESS",
+          "score": 0.712365984916687
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_evacuation_completed_04",
+          "claim_type": "EVACUATION",
+          "value": "COMPLETED",
+          "score": 0.7031167149543762
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_traffic_status_moving_01",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "MOVING",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_moving_03",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.8460174202919006
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_traffic_status_moving_02",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7673046588897705
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_moving_09",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7416190505027771
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_road_access_passable_02",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7380959391593933
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_moving_06",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7239314913749695
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_traffic_status_moving_02",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "MOVING",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_moving_10",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.8939002156257629
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_road_access_passable_04",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7627880573272705
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_moving_03",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7477719187736511
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_traffic_status_moving_06",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7164912819862366
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_moving_01",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7163241505622864
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_traffic_status_moving_03",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "MOVING",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_stopped_02",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.7475876212120056
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_road_access_passable_06",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.72607421875
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_moving_08",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7239906787872314
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_traffic_status_moving_04",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7051960229873657
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_moving_09",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.6795333623886108
+        }
+      ],
+      "first_correct_rank": 3
+    },
+    {
+      "probe_id": "probe_traffic_status_slow_01",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "SLOW",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_slow_02",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.9344780445098877
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_traffic_status_slow_04",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.8033449649810791
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_slow_08",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.7852094173431396
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_traffic_status_slow_10",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.7759908437728882
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_moving_06",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.7094585299491882
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_traffic_status_slow_02",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "SLOW",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_slow_09",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.7158071398735046
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_traffic_status_moving_05",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.6984230875968933
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_slow_03",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.6537443995475769
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_road_access_passable_08",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.5846471190452576
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_moving_01",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.5826013088226318
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_traffic_status_slow_03",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "SLOW",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_slow_10",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.7956536412239075
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_traffic_status_slow_01",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.736369788646698
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_slow_05",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.733890950679779
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_road_access_passable_04",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7303195595741272
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_slow_04",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.7229912877082825
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_traffic_status_stopped_01",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "STOPPED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_stopped_07",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.7786549925804138
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_traffic_status_stopped_02",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.6965935826301575
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_stopped_01",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.670725405216217
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_traffic_status_stopped_06",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.6600303649902344
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_slow_08",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "SLOW",
+          "score": 0.6525483727455139
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_traffic_status_stopped_02",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "STOPPED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_stopped_03",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.9530327320098877
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_traffic_status_stopped_10",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.773232102394104
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_moving_10",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.712497353553772
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_road_access_passable_04",
+          "claim_type": "ROAD_ACCESS",
+          "value": "PASSABLE",
+          "score": 0.7117769718170166
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_moving_07",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "MOVING",
+          "score": 0.6995862126350403
+        }
+      ],
+      "first_correct_rank": 1
+    },
+    {
+      "probe_id": "probe_traffic_status_stopped_03",
+      "expected_claim_type": "TRAFFIC_STATUS",
+      "expected_value": "STOPPED",
+      "top_results": [
+        {
+          "rank": 1,
+          "exemplar_id": "exm_traffic_status_stopped_04",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.8875077962875366
+        },
+        {
+          "rank": 2,
+          "exemplar_id": "exm_road_access_impassable_10",
+          "claim_type": "ROAD_ACCESS",
+          "value": "IMPASSABLE",
+          "score": 0.8795186281204224
+        },
+        {
+          "rank": 3,
+          "exemplar_id": "exm_traffic_status_stopped_02",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.7366335391998291
+        },
+        {
+          "rank": 4,
+          "exemplar_id": "exm_flooded_no_07",
+          "claim_type": "FLOODED",
+          "value": "NO",
+          "score": 0.7149847745895386
+        },
+        {
+          "rank": 5,
+          "exemplar_id": "exm_traffic_status_stopped_08",
+          "claim_type": "TRAFFIC_STATUS",
+          "value": "STOPPED",
+          "score": 0.6640684008598328
+        }
+      ],
+      "first_correct_rank": 1
+    }
+  ]
+}
