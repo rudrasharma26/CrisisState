@@ -1,0 +1,368 @@
+[
+  {
+    "probe_id": "probe_flooded_yes_01",
+    "text": "Water has spread across the residential blocks.",
+    "expected_claim_type": "FLOODED",
+    "expected_value": "YES"
+  },
+  {
+    "probe_id": "probe_flooded_yes_02",
+    "text": "The site is covered by floodwater.",
+    "expected_claim_type": "FLOODED",
+    "expected_value": "YES"
+  },
+  {
+    "probe_id": "probe_flooded_yes_03",
+    "text": "Flooding is affecting the reported location.",
+    "expected_claim_type": "FLOODED",
+    "expected_value": "YES"
+  },
+  {
+    "probe_id": "probe_flooded_no_01",
+    "text": "The locality remains free of floodwater.",
+    "expected_claim_type": "FLOODED",
+    "expected_value": "NO"
+  },
+  {
+    "probe_id": "probe_flooded_no_02",
+    "text": "The reported site has not been inundated.",
+    "expected_claim_type": "FLOODED",
+    "expected_value": "NO"
+  },
+  {
+    "probe_id": "probe_flooded_no_03",
+    "text": "No flooding is present in the area.",
+    "expected_claim_type": "FLOODED",
+    "expected_value": "NO"
+  },
+
+  {
+    "probe_id": "probe_road_access_passable_01",
+    "text": "Vehicles are still able to use the route.",
+    "expected_claim_type": "ROAD_ACCESS",
+    "expected_value": "PASSABLE"
+  },
+  {
+    "probe_id": "probe_road_access_passable_02",
+    "text": "The street remains usable by cars.",
+    "expected_claim_type": "ROAD_ACCESS",
+    "expected_value": "PASSABLE"
+  },
+  {
+    "probe_id": "probe_road_access_passable_03",
+    "text": "Drivers can get across the affected road.",
+    "expected_claim_type": "ROAD_ACCESS",
+    "expected_value": "PASSABLE"
+  },
+  {
+    "probe_id": "probe_road_access_impassable_01",
+    "text": "The flooded route cannot be crossed by vehicles.",
+    "expected_claim_type": "ROAD_ACCESS",
+    "expected_value": "IMPASSABLE"
+  },
+  {
+    "probe_id": "probe_road_access_impassable_02",
+    "text": "The street is inaccessible to traffic.",
+    "expected_claim_type": "ROAD_ACCESS",
+    "expected_value": "IMPASSABLE"
+  },
+  {
+    "probe_id": "probe_road_access_impassable_03",
+    "text": "Vehicles are unable to pass this section.",
+    "expected_claim_type": "ROAD_ACCESS",
+    "expected_value": "IMPASSABLE"
+  },
+
+  {
+    "probe_id": "probe_water_level_low_01",
+    "text": "Only shallow water has accumulated here.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "LOW"
+  },
+  {
+    "probe_id": "probe_water_level_low_02",
+    "text": "The water depth remains limited.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "LOW"
+  },
+  {
+    "probe_id": "probe_water_level_low_03",
+    "text": "A thin layer of floodwater covers the ground.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "LOW"
+  },
+  {
+    "probe_id": "probe_water_level_moderate_01",
+    "text": "Floodwater has reached a middle-range depth.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "MODERATE"
+  },
+  {
+    "probe_id": "probe_water_level_moderate_02",
+    "text": "The site is experiencing moderate water depth.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "MODERATE"
+  },
+  {
+    "probe_id": "probe_water_level_moderate_03",
+    "text": "Water levels are neither shallow nor extreme.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "MODERATE"
+  },
+  {
+    "probe_id": "probe_water_level_high_01",
+    "text": "A large depth of water is covering the roadway.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "HIGH"
+  },
+  {
+    "probe_id": "probe_water_level_high_02",
+    "text": "Floodwater has risen substantially at the site.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "HIGH"
+  },
+  {
+    "probe_id": "probe_water_level_high_03",
+    "text": "The location is under deep floodwater.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "HIGH"
+  },
+  {
+    "probe_id": "probe_water_level_critical_01",
+    "text": "Water depth has reached an extreme level.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "CRITICAL"
+  },
+  {
+    "probe_id": "probe_water_level_critical_02",
+    "text": "The flooding has reached a dangerously severe depth.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "CRITICAL"
+  },
+  {
+    "probe_id": "probe_water_level_critical_03",
+    "text": "The site is facing critically elevated water levels.",
+    "expected_claim_type": "WATER_LEVEL",
+    "expected_value": "CRITICAL"
+  },
+
+  {
+    "probe_id": "probe_people_trapped_yes_01",
+    "text": "Several residents are unable to get out.",
+    "expected_claim_type": "PEOPLE_TRAPPED",
+    "expected_value": "YES"
+  },
+  {
+    "probe_id": "probe_people_trapped_yes_02",
+    "text": "People remain stranded inside the affected area.",
+    "expected_claim_type": "PEOPLE_TRAPPED",
+    "expected_value": "YES"
+  },
+  {
+    "probe_id": "probe_people_trapped_yes_03",
+    "text": "Flooding has left residents stuck at the site.",
+    "expected_claim_type": "PEOPLE_TRAPPED",
+    "expected_value": "YES"
+  },
+  {
+    "probe_id": "probe_people_trapped_no_01",
+    "text": "Residents are able to leave the affected location.",
+    "expected_claim_type": "PEOPLE_TRAPPED",
+    "expected_value": "NO"
+  },
+  {
+    "probe_id": "probe_people_trapped_no_02",
+    "text": "Nobody is stranded at the reported site.",
+    "expected_claim_type": "PEOPLE_TRAPPED",
+    "expected_value": "NO"
+  },
+  {
+    "probe_id": "probe_people_trapped_no_03",
+    "text": "People remain free to exit the area.",
+    "expected_claim_type": "PEOPLE_TRAPPED",
+    "expected_value": "NO"
+  },
+
+  {
+    "probe_id": "probe_building_damage_none_01",
+    "text": "The structure shows no flood-related damage.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "NONE"
+  },
+  {
+    "probe_id": "probe_building_damage_none_02",
+    "text": "The property remains intact.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "NONE"
+  },
+  {
+    "probe_id": "probe_building_damage_none_03",
+    "text": "No structural harm has been observed.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "NONE"
+  },
+  {
+    "probe_id": "probe_building_damage_damaged_01",
+    "text": "The structure has sustained some flood damage.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "DAMAGED"
+  },
+  {
+    "probe_id": "probe_building_damage_damaged_02",
+    "text": "Parts of the property have been damaged.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "DAMAGED"
+  },
+  {
+    "probe_id": "probe_building_damage_damaged_03",
+    "text": "Flooding has affected the building but it is still standing.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "DAMAGED"
+  },
+  {
+    "probe_id": "probe_building_damage_collapsed_01",
+    "text": "The structure has fallen following the flooding.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "COLLAPSED"
+  },
+  {
+    "probe_id": "probe_building_damage_collapsed_02",
+    "text": "A major section of the building has given way.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "COLLAPSED"
+  },
+  {
+    "probe_id": "probe_building_damage_collapsed_03",
+    "text": "The affected building is no longer standing.",
+    "expected_claim_type": "BUILDING_DAMAGE",
+    "expected_value": "COLLAPSED"
+  },
+
+  {
+    "probe_id": "probe_evacuation_ordered_01",
+    "text": "Officials have directed residents to leave.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "ORDERED"
+  },
+  {
+    "probe_id": "probe_evacuation_ordered_02",
+    "text": "A formal evacuation instruction is now active.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "ORDERED"
+  },
+  {
+    "probe_id": "probe_evacuation_ordered_03",
+    "text": "Authorities have mandated that people move out of the zone.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "ORDERED"
+  },
+  {
+    "probe_id": "probe_evacuation_not_ordered_01",
+    "text": "No official instruction to evacuate has been given.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "NOT_ORDERED"
+  },
+  {
+    "probe_id": "probe_evacuation_not_ordered_02",
+    "text": "Authorities have not directed residents to leave.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "NOT_ORDERED"
+  },
+  {
+    "probe_id": "probe_evacuation_not_ordered_03",
+    "text": "There is no formal evacuation order at present.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "NOT_ORDERED"
+  },
+  {
+    "probe_id": "probe_evacuation_in_progress_01",
+    "text": "Residents are currently being moved out of the area.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "IN_PROGRESS"
+  },
+  {
+    "probe_id": "probe_evacuation_in_progress_02",
+    "text": "People are leaving the zone as the evacuation continues.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "IN_PROGRESS"
+  },
+  {
+    "probe_id": "probe_evacuation_in_progress_03",
+    "text": "Evacuation operations are underway.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "IN_PROGRESS"
+  },
+  {
+    "probe_id": "probe_evacuation_completed_01",
+    "text": "The affected residents have all been moved to safety.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "COMPLETED"
+  },
+ {
+  "probe_id": "probe_evacuation_completed_02",
+  "text": "The authorities report that all evacuation movements from the zone have ended.",
+  "expected_claim_type": "EVACUATION",
+  "expected_value": "COMPLETED"
+},
+  {
+    "probe_id": "probe_evacuation_completed_03",
+    "text": "Everyone designated for evacuation has left the area.",
+    "expected_claim_type": "EVACUATION",
+    "expected_value": "COMPLETED"
+  },
+
+  {
+    "probe_id": "probe_traffic_status_moving_01",
+    "text": "Vehicles continue to flow through the street.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "MOVING"
+  },
+  {
+    "probe_id": "probe_traffic_status_moving_02",
+    "text": "Traffic remains in motion along the route.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "MOVING"
+  },
+  {
+    "probe_id": "probe_traffic_status_moving_03",
+    "text": "Cars are still travelling through the affected section.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "MOVING"
+  },
+  {
+    "probe_id": "probe_traffic_status_slow_01",
+    "text": "Vehicles are progressing at a reduced speed.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "SLOW"
+  },
+  {
+    "probe_id": "probe_traffic_status_slow_02",
+    "text": "Traffic is crawling through the flooded stretch.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "SLOW"
+  },
+  {
+    "probe_id": "probe_traffic_status_slow_03",
+    "text": "Cars can move, but traffic is heavily slowed.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "SLOW"
+  },
+  {
+    "probe_id": "probe_traffic_status_stopped_01",
+    "text": "Vehicle movement has completely halted.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "STOPPED"
+  },
+  {
+    "probe_id": "probe_traffic_status_stopped_02",
+    "text": "Traffic is at a standstill.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "STOPPED"
+  },
+  {
+    "probe_id": "probe_traffic_status_stopped_03",
+    "text": "No vehicles are moving through the affected road.",
+    "expected_claim_type": "TRAFFIC_STATUS",
+    "expected_value": "STOPPED"
+  }
+]
