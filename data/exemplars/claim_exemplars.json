@@ -723,5 +723,328 @@
     "text": "The affected structure has completely collapsed.",
     "source": "HAND_AUTHORED",
     "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_01",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "Authorities have ordered an evacuation of the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_02",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "Residents have been instructed to evacuate.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_03",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "An evacuation order is in effect for the neighborhood.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_04",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "Officials have directed people to leave the affected area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_05",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "The authorities issued an evacuation directive.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_06",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "People in the area have been told to evacuate.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_07",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "A formal order to leave the area has been issued.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_08",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "Officials have instructed residents to move to safer locations.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_09",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "An evacuation has been mandated for the flooded zone.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_ordered_10",
+    "claim_type": "EVACUATION",
+    "value": "ORDERED",
+    "text": "Residents are under instructions to leave the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_evacuation_not_ordered_01",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "No evacuation order has been issued.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_02",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "Authorities have not ordered residents to evacuate.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_03",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "There is currently no formal evacuation directive.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_04",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "Officials have not instructed people to leave the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_05",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "No evacuation directive is in effect at the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_06",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "Residents have not been told to evacuate.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_07",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "Authorities have issued no order to leave the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_08",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "An official evacuation has not been requested.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_09",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "No mandatory evacuation instruction has been given.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_not_ordered_10",
+    "claim_type": "EVACUATION",
+    "value": "NOT_ORDERED",
+    "text": "The authorities have not directed residents to leave.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_evacuation_in_progress_01",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "Residents are currently evacuating the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_02",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "The evacuation is underway.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_03",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "People are leaving the affected neighborhood.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_04",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "Residents are being moved out of the flooded zone.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_05",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "Evacuation operations are currently underway.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_06",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "People are actively leaving the area for safety.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_07",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "The evacuation process has begun and is ongoing.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_08",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "Residents are currently being evacuated from the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_09",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "The area is in the process of being evacuated.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_in_progress_10",
+    "claim_type": "EVACUATION",
+    "value": "IN_PROGRESS",
+    "text": "People are leaving the flooded area as the evacuation continues.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_evacuation_completed_01",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "The evacuation has been completed.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_02",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "Residents have been successfully evacuated from the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_03",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "Everyone affected has been moved to safety.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_04",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "The evacuation operation is finished.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_05",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "Residents have all been evacuated from the flooded zone.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_06",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "The evacuation process has concluded.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_07",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "Everyone scheduled for evacuation has left the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_08",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "The affected residents are no longer in the evacuation zone.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_09",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "Evacuation activities at the site are complete.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_evacuation_completed_10",
+    "claim_type": "EVACUATION",
+    "value": "COMPLETED",
+    "text": "The evacuation has ended with residents moved to safety.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
   }
 ]
