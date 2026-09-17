@@ -481,5 +481,247 @@
     "text": "Residents are not unable to leave the site.",
     "source": "HAND_AUTHORED",
     "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_01",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "No damage to the building has been reported.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_02",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "The structure remains undamaged.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_03",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "The building is intact despite the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_04",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "No structural damage is visible at the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_05",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "The property has not suffered damage.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_06",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "The structure appears unaffected by the flood.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_07",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "No damage has been observed on the building.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_08",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "The building remains structurally sound.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_09",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "Flooding has not caused damage to the structure.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_none_10",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "NONE",
+    "text": "The building is still intact.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_building_damage_damaged_01",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "The building has suffered damage from the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_02",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "Floodwater has damaged the structure.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_03",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "The property has visible structural damage.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_04",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "Parts of the building have been damaged.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_05",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "The structure has sustained flood-related damage.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_06",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "Damage is visible on the affected building.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_07",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "The building has been partially damaged.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_08",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "Flooding has caused damage to the premises.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_09",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "The structure is damaged but still standing.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_damaged_10",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "DAMAGED",
+    "text": "The building has sustained some damage.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_building_damage_collapsed_01",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "The building has collapsed.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_02",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "Part of the structure has collapsed under the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_03",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "The building has fallen down.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_04",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "The structure has suffered a collapse.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_05",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "A section of the building has caved in.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_06",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "Flooding has caused the structure to collapse.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_07",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "The building is no longer standing after the incident.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_08",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "The structure has given way and collapsed.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_09",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "A major section of the building has fallen.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_building_damage_collapsed_10",
+    "claim_type": "BUILDING_DAMAGE",
+    "value": "COLLAPSED",
+    "text": "The affected structure has completely collapsed.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
   }
 ]
