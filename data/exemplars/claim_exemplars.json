@@ -320,5 +320,166 @@
     "text": "No vehicles are able to pass through the road.",
     "source": "HAND_AUTHORED",
     "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_01",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "People are trapped in the flooded area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_02",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "Residents are unable to leave the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_03",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "Several people are stranded by the floodwater.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_04",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "Residents are trapped inside their homes.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_05",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "People cannot get out of the affected area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_06",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "Flooding has left residents stranded.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_07",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "People are unable to move out because of the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_08",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "Residents remain stranded at the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_09",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "Floodwater is preventing people from leaving.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_yes_10",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "YES",
+    "text": "A number of residents are stuck in the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_people_trapped_no_01",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "No people are trapped in the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_02",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "Residents are able to leave the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_03",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "There are no stranded people at the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_04",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "People can safely leave the affected area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_05",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "Residents are not stranded by the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_06",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "No one is stuck at the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_07",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "Flooding has not trapped any residents.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_08",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "People remain able to get out of the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_09",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "There are no reports of people being stranded here.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_people_trapped_no_10",
+    "claim_type": "PEOPLE_TRAPPED",
+    "value": "NO",
+    "text": "Residents are not unable to leave the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
   }
 ]
