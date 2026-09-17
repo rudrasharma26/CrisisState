@@ -1046,5 +1046,247 @@
     "text": "The evacuation has ended with residents moved to safety.",
     "source": "HAND_AUTHORED",
     "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_01",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Traffic is moving normally through the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_02",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Vehicles are moving along the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_03",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Traffic continues to flow through the street.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_04",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Cars are able to travel through the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_05",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Traffic is flowing despite the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_06",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Vehicles are proceeding along the route.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_07",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "The traffic stream remains active.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_08",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Road traffic is continuing through the affected section.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_09",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Vehicles can still move through the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_moving_10",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "MOVING",
+    "text": "Traffic remains in motion at the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_traffic_status_slow_01",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Traffic is moving slowly through the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_02",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Vehicles are moving at a reduced speed.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_03",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Traffic is progressing slowly because of the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_04",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Vehicles are getting through, but movement is slow.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_05",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Traffic flow has slowed considerably in the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_06",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Cars are moving slowly along the flooded road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_07",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "The road is experiencing slow-moving traffic.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_08",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Vehicle movement is heavily reduced but still continuing.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_09",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Traffic is crawling through the affected section.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_slow_10",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "SLOW",
+    "text": "Vehicles are moving, but congestion is reducing their speed.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+
+  {
+    "id": "exm_traffic_status_stopped_01",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "Traffic has stopped completely.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_02",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "Vehicles are no longer moving through the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_03",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "Traffic is at a standstill on the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_04",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "No vehicles are moving through the affected section.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_05",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "Flooding has brought traffic to a halt.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_06",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "Vehicle movement has come to a complete stop.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_07",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "The traffic flow is completely halted.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_08",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "Cars are unable to move through the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_09",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "Traffic has been halted by the flooding.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_traffic_status_stopped_10",
+    "claim_type": "TRAFFIC_STATUS",
+    "value": "STOPPED",
+    "text": "The road is currently at a complete standstill.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
   }
 ]
