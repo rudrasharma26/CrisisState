@@ -1288,5 +1288,325 @@
     "text": "The road is currently at a complete standstill.",
     "source": "HAND_AUTHORED",
     "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_01",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "Water levels are low at the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_02",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "Only a small amount of water is present.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_03",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "Floodwater is shallow in this area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_04",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "The water is only slightly deep.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_05",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "Water depth remains limited at the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_06",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "Shallow floodwater is covering the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_07",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "The reported water depth is low.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_08",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "There is only a thin layer of standing water.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_09",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "The flooding is shallow for now.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_low_10",
+    "claim_type": "WATER_LEVEL",
+    "value": "LOW",
+    "text": "Water has accumulated only slightly at the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_01",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "Water levels are moderate in the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_02",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "The floodwater is at a moderate depth.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_03",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "Water has risen to a moderate level.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_04",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "The site has a noticeable but moderate amount of floodwater.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_05",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "Floodwater is neither shallow nor severe at this point.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_06",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "The reported water depth is moderate.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_07",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "Moderate flooding is present across the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_08",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "Water depth has reached a mid-range level.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_09",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "The water is deeper than shallow but not extreme.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_moderate_10",
+    "claim_type": "WATER_LEVEL",
+    "value": "MODERATE",
+    "text": "Floodwater has reached a moderate depth on the road.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_01",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "Water levels are high at the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_02",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "The floodwater is very deep.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_03",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "Water has risen to a high level in the area.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_04",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "Deep floodwater is covering the street.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_05",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "The reported water depth is high.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_06",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "Floodwater has reached a considerable depth.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_07",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "The site is experiencing substantial water depth.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_08",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "Water has risen well above the normal level.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_09",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "The road is under a significant depth of water.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_high_10",
+    "claim_type": "WATER_LEVEL",
+    "value": "HIGH",
+    "text": "Floodwater is deep enough to cover much of the roadway.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_01",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "Water levels have reached a critical point.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_02",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "The area is experiencing dangerously high floodwater.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_03",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "Water depth is at a critical level.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_04",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "Floodwater has risen to an extreme level.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_05",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "The reported water depth is critical.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_06",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "Floodwater has reached an extreme depth at the site.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_07",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "Water levels are dangerously high across the location.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_08",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "The flooding has reached a severe water depth.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_09",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "Water has risen to a level requiring immediate attention.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
+  },
+  {
+    "id": "exm_water_level_critical_10",
+    "claim_type": "WATER_LEVEL",
+    "value": "CRITICAL",
+    "text": "The site is under critically deep floodwater.",
+    "source": "HAND_AUTHORED",
+    "version": "v1"
   }
 ]
