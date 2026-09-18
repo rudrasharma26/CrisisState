@@ -42,8 +42,9 @@ def test_candidate_passes_semantic_gate():
 
     assert result["status"] == "CANDIDATE_AVAILABLE"
     assert result["reason"] == "PASSED_SEMANTIC_GATE"
-    assert result["margin"] == pytest.approx(0.10)
-    assert len(result["candidates"]) == 2
+    assert result["margin"] == pytest.approx(1.0)
+    assert len(result["candidates"]) == 1
+    assert result["candidates"][0]["value"] == "IMPASSABLE"
 
 
 def test_below_threshold_is_rejected():
