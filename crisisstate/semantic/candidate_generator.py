@@ -2,16 +2,17 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, Dict, List
 
 from crisisstate.semantic.exemplar_search import ExemplarSearch
 
 
 class SemanticCandidateGenerator:
-    """Generate filtered semantic claim candidates.
+    """Generate deterministic semantic candidates.
 
-    This component proposes candidates only.
-    It does not create final claims.
+    Semantic retrieval proposes exemplar matches.
+    This component collapses duplicate exemplars into canonical
+    claim-value candidates and applies the semantic gate.
     """
 
     DEFAULT_TOP_K = 5
@@ -25,14 +26,55 @@ class SemanticCandidateGenerator:
         margin_threshold: float = DEFAULT_MARGIN_THRESHOLD,
     ) -> None:
         if not 0.0 <= similarity_threshold <= 1.0:
-            raise ValueError("similarity_threshold must be between 0 and 1")
+            raise ValueError(
+                "similarity_threshold must be between 0 and 1"
+            )
 
         if not 0.0 <= margin_threshold <= 1.0:
-            raise ValueError("margin_threshold must be between 0 and 1")
+            raise ValueError(
+                "margin_threshold must be between 0 and 1"
+            )
 
         self.exemplar_search = exemplar_search
         self.similarity_threshold = similarity_threshold
         self.margin_threshold = margin_threshold
+
+    @staticmethod
+    def _collapse_canonical_candidates(
+        results: List[Dict[str, Any]],
+    ) -> List[Dict[str, Any]]:
+        """Keep only the strongest exemplar for each canonical value."""
+        best_by_value: Dict[tuple[str, str], Dict[str, Any]] = {}
+
+        for result in results:
+            key = (
+                result["claim_type"],
+                result["value"],
+            )
+
+            current = best_by_value.get(key)
+
+            if (
+                current is None
+                or result["similarity_score"]
+                > current["similarity_score"]
+            ):
+                best_by_value[key] = dict(result)
+
+        candidates = sorted(
+            best_by_value.values(),
+            key=lambda item: (
+                -item["similarity_score"],
+                item["claim_type"],
+                item["value"],
+                item["exemplar_id"],
+            ),
+        )
+
+        for rank, candidate in enumerate(candidates, start=1):
+            candidate["canonical_rank"] = rank
+
+        return candidates
 
     def generate(
         self,
@@ -40,7 +82,15 @@ class SemanticCandidateGenerator:
         preferred_claim_type: str | None = None,
         top_k: int = DEFAULT_TOP_K,
     ) -> dict[str, Any]:
-        """Generate semantic candidates for a text span."""
+        """Generate semantically ranked canonical candidates."""
+        if not isinstance(text, str):
+            raise TypeError("text must be a string")
+
+        if not text.strip():
+            raise ValueError("text must not be empty")
+
+        if top_k <= 0:
+            raise ValueError("top_k must be greater than zero")
 
         results = self.exemplar_search.search(
             text,
@@ -64,10 +114,15 @@ class SemanticCandidateGenerator:
                 if result["claim_type"] == preferred_claim_type
             ]
 
+        candidates = self._collapse_canonical_candidates(
+            compatible
+        )
+
         thresholded = [
-            result
-            for result in compatible
-            if result["similarity_score"] >= self.similarity_threshold
+            candidate
+            for candidate in candidates
+            if candidate["similarity_score"]
+            >= self.similarity_threshold
         ]
 
         if not thresholded:
@@ -80,18 +135,15 @@ class SemanticCandidateGenerator:
 
         top_candidate = thresholded[0]
 
-        second_candidate = (
-            thresholded[1]
-            if len(thresholded) > 1
-            else None
-        )
-
-        margin = (
-            top_candidate["similarity_score"]
-            - second_candidate["similarity_score"]
-            if second_candidate is not None
-            else 1.0
-        )
+        if len(thresholded) == 1:
+            second_score = None
+            margin = 1.0
+        else:
+            second_score = thresholded[1]["similarity_score"]
+            margin = (
+                top_candidate["similarity_score"]
+                - second_score
+            )
 
         if margin < self.margin_threshold:
             return {
@@ -100,11 +152,7 @@ class SemanticCandidateGenerator:
                 "status": "AMBIGUOUS",
                 "reason": "INSUFFICIENT_SIMILARITY_MARGIN",
                 "top_score": top_candidate["similarity_score"],
-                "second_score": (
-                    second_candidate["similarity_score"]
-                    if second_candidate is not None
-                    else None
-                ),
+                "second_score": second_score,
                 "margin": margin,
             }
 
@@ -114,10 +162,6 @@ class SemanticCandidateGenerator:
             "status": "CANDIDATE_AVAILABLE",
             "reason": "PASSED_SEMANTIC_GATE",
             "top_score": top_candidate["similarity_score"],
-            "second_score": (
-                second_candidate["similarity_score"]
-                if second_candidate is not None
-                else None
-            ),
+            "second_score": second_score,
             "margin": margin,
         }

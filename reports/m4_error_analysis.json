@@ -1,0 +1,2013 @@
+{
+  "evaluation": "M4 detailed error analysis",
+  "report_count": 80,
+  "totals": {
+    "false_positives": 23,
+    "false_negatives": 36,
+    "value_mismatches": 6,
+    "semantic_claims": 6,
+    "unresolved_spans": 18
+  },
+  "per_report": {
+    "eval_rep_002": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "PASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "LOW"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "LOW"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "LOW",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.85,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_030": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [
+        {
+          "claim_type": "FLOODED",
+          "subject": "Market Square",
+          "value": "NO",
+          "matched_exemplar_id": "exm_flooded_no_02",
+          "similarity_score": 0.7789509296417236,
+          "source_span": {
+            "start": 0,
+            "end": 61,
+            "text": "There is no flooding observed near Market Square storefronts."
+          }
+        }
+      ],
+      "lexical_claims": [],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_011": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "LOW"
+        },
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Main Road",
+          "value": "MOVING"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_028": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "General Urban Area",
+          "value": "MOVING",
+          "matched_exemplar_id": "exm_traffic_status_moving_06",
+          "similarity_score": 0.7409451007843018,
+          "source_span": {
+            "start": 26,
+            "end": 56,
+            "text": "Vehicles can proceed smoothly."
+          }
+        }
+      ],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "General Urban Area",
+          "value": "MOVING",
+          "extraction_method": "SEMANTIC",
+          "extraction_confidence": 0.7409451007843018,
+          "matched_exemplar_id": "exm_traffic_status_moving_06",
+          "similarity_score": 0.7409451007843018
+        }
+      ],
+      "value_mismatches": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "main road",
+          "gold_value": "PASSABLE",
+          "predicted_value": "IMPASSABLE",
+          "prediction_method": "LEXICAL",
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "unresolved_spans": []
+    },
+    "eval_rep_015": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "5th Avenue",
+          "value": "MODERATE"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "5th Avenue",
+          "value": "SLOW"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_036": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "MODERATE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "MODERATE",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.85,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_001": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 3,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "HIGH"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "HIGH",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_075": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "HIGH",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_016": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "IMPASSABLE",
+          "matched_exemplar_id": "exm_road_access_impassable_02",
+          "similarity_score": 0.777850866317749,
+          "source_span": {
+            "start": 0,
+            "end": 85,
+            "text": "Vehicles cannot get through Main Road as the flood waters have swallowed the asphalt."
+          }
+        }
+      ],
+      "lexical_claims": [],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_037": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "Sector 4 Underpass",
+          "value": "YES"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_017": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_003": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Sector 4 Underpass",
+          "value": "CRITICAL"
+        },
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "General Urban Area",
+          "value": "YES"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "Sector 4 Underpass",
+          "value": "YES"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "General Urban Area",
+          "value": "YES",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.95,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_020": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Sector 4 Underpass",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Waters have swelled up to chest height across Sector 4 Underpass.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_044": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "PASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "main road",
+          "gold_value": "IMPASSABLE",
+          "predicted_value": "PASSABLE",
+          "prediction_method": "LEXICAL",
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "unresolved_spans": []
+    },
+    "eval_rep_004": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Sector 4 Underpass",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Sector 4 Underpass",
+          "value": "HIGH"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "HIGH",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_034": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "Central Bus Stand",
+          "value": "NOT_ORDERED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Central Bus Stand reports evacuation not ordered by metropolitan transport.",
+          "rejection_reason": "SEMANTIC_RESULT_AMBIGUOUS",
+          "top_candidates": [
+            {
+              "claim_type": "EVACUATION",
+              "value": "NOT_ORDERED",
+              "score": 0.6988980174064636
+            },
+            {
+              "claim_type": "EVACUATION",
+              "value": "NOT_ORDERED",
+              "score": 0.6931418776512146
+            },
+            {
+              "claim_type": "EVACUATION",
+              "value": "NOT_ORDERED",
+              "score": 0.6902344226837158
+            }
+          ]
+        }
+      ]
+    },
+    "eval_rep_052": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Bridge Road",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_077": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Sector 4 Underpass",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Sector 4 Underpass",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Sector 4 Underpass",
+          "value": "HIGH",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_053": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Main Road",
+          "value": "SLOW"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_038": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Market Square",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_005": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 3,
+      "semantic_claims": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "General Urban Area",
+          "value": "STOPPED",
+          "matched_exemplar_id": "exm_traffic_status_stopped_01",
+          "similarity_score": 0.9634139537811279,
+          "source_span": {
+            "start": 59,
+            "end": 89,
+            "text": "Traffic is stopped completely."
+          }
+        }
+      ],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Market Square",
+          "value": "MODERATE"
+        },
+        {
+          "claim_type": "FLOODED",
+          "subject": "Market Square",
+          "value": "YES"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Market Square",
+          "value": "STOPPED"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "FLOODED",
+          "subject": "Market Square",
+          "value": "YES",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.85,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        },
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "General Urban Area",
+          "value": "STOPPED",
+          "extraction_method": "SEMANTIC",
+          "extraction_confidence": 0.9634139537811279,
+          "matched_exemplar_id": "exm_traffic_status_stopped_01",
+          "similarity_score": 0.9634139537811279
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_040": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "5th Avenue",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_060": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Central Bus Stand",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Central Bus Stand",
+          "value": "STOPPED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_079": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Market Square",
+          "value": "STOPPED"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_061": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Highway 9 Bypass",
+          "value": "STOPPED"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Highway 9 Bypass",
+          "value": "HIGH"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "HIGH",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_019": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Market Square",
+          "value": "STOPPED"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_045": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Sector 4 Underpass",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_062": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Sector 4 Underpass",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Sector 4 Underpass",
+          "value": "STOPPED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_023": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "BUILDING_DAMAGE",
+          "subject": "Market Square",
+          "value": "COLLAPSED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Commercial complex frontage has disintegrated and crumbled into debris at Market Square.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_006": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "Riverbank Colony",
+          "value": "ORDERED"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Riverbank Colony",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "CRITICAL",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.95,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_042": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Central Bus Stand",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_054": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Bridge Road",
+          "value": "MODERATE"
+        },
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Bridge Road",
+          "value": "STOPPED"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Bridge Road",
+          "value": "MODERATE",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.85,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_063": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Riverbank Colony",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_055": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_064": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Market Square",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_025": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "Riverbank Colony",
+          "value": "ORDERED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Authorities are directing everyone to vacate Riverbank Colony right away.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_065": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "5th Avenue",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "5th Avenue",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_066": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Central Bus Stand",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Central Bus Stand",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_007": {
+      "gold_claim_count": 3,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "5th Avenue",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "5th Avenue",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "5th Avenue",
+          "value": "STOPPED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Traffic is stopped.",
+          "rejection_reason": "SEMANTIC_RESULT_AMBIGUOUS",
+          "top_candidates": [
+            {
+              "claim_type": "TRAFFIC_STATUS",
+              "value": "STOPPED",
+              "score": 0.8102638721466064
+            },
+            {
+              "claim_type": "TRAFFIC_STATUS",
+              "value": "STOPPED",
+              "score": 0.7856268882751465
+            },
+            {
+              "claim_type": "TRAFFIC_STATUS",
+              "value": "MOVING",
+              "score": 0.7602016925811768
+            },
+            {
+              "claim_type": "TRAFFIC_STATUS",
+              "value": "MOVING",
+              "score": 0.7456839084625244
+            },
+            {
+              "claim_type": "ROAD_ACCESS",
+              "value": "PASSABLE",
+              "score": 0.7452285289764404
+            }
+          ]
+        }
+      ]
+    },
+    "eval_rep_046": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Market Square",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_050": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "FLOODED",
+          "subject": "Central Bus Stand",
+          "value": "YES"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_018": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "Riverbank Colony",
+          "value": "YES"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Pedestrians are marooned inside Riverbank Colony awaiting boat assistance.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_041": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Bridge Road",
+          "value": "STOPPED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Bridge Road traffic might be stopped due to ponding water ahead.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_021": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "5th Avenue",
+          "value": "YES"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Inhabitants are unable to flee 5th Avenue without emergency crew help.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_008": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Bridge Road",
+          "value": "PASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_043": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "General Urban Area",
+          "value": "ORDERED"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "Highway 9 Bypass",
+          "value": "ORDERED"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "General Urban Area",
+          "value": "ORDERED",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.95,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_048": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "5th Avenue",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "5th avenue",
+          "gold_value": "PASSABLE",
+          "predicted_value": "IMPASSABLE",
+          "prediction_method": "LEXICAL",
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "unresolved_spans": []
+    },
+    "eval_rep_022": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Bridge Road",
+          "value": "PASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Bridge Road",
+          "value": "MODERATE"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Water is only ankle high near Bridge Road, allowing standard sedans through.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_009": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Central Bus Stand",
+          "value": "CRITICAL"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_047": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "Riverbank Colony",
+          "value": "IN_PROGRESS"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Riverbank Colony evacuation in progress for low-lying blocks only.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_024": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Central Bus Stand",
+          "value": "STOPPED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Buses and coaches are completely immobilized in the deluge at Central Bus Stand.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_049": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Bridge Road",
+          "value": "SLOW"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_010": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "General Urban Area",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "BUILDING_DAMAGE",
+          "subject": "Highway 9 Bypass",
+          "value": "COLLAPSED"
+        },
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Highway 9 Bypass",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "General Urban Area",
+          "value": "IMPASSABLE",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.95,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Highway 9 Bypass has collapsed building near service lane.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_056": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Bridge Road",
+          "value": "PASSABLE"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Bridge Road",
+          "value": "MODERATE"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_057": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "BUILDING_DAMAGE",
+          "subject": "Main Road",
+          "value": "DAMAGED"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_026": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "BUILDING_DAMAGE",
+          "subject": "Highway 9 Bypass",
+          "value": "DAMAGED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Highway 9 Bypass has suffered roadway cracking and guardrail wreckage.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_039": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "BUILDING_DAMAGE",
+          "subject": "Riverbank Colony",
+          "value": "COLLAPSED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "It looks like Riverbank Colony might have collapsed walls on the perimeter.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_013": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [
+        {
+          "claim_type": "BUILDING_DAMAGE",
+          "subject": "Riverbank Colony",
+          "value": "DAMAGED",
+          "matched_exemplar_id": "exm_building_damage_damaged_02",
+          "similarity_score": 0.7014086842536926,
+          "source_span": {
+            "start": 0,
+            "end": 71,
+            "text": "Riverbank Colony building has damaged structures due to water pressure."
+          }
+        }
+      ],
+      "lexical_claims": [],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_033": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Bridge Road",
+          "value": "SLOW"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Bridge Road traffic is not stopped, though proceeding carefully.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_051": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Bypass eastbound lane",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Highway 9 Bypass",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Bypass eastbound lane",
+          "value": "IMPASSABLE",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.95,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_031": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "BUILDING_DAMAGE",
+          "subject": "Riverbank Colony",
+          "value": "NONE"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Riverbank Colony has not collapsed despite heavy current against the retaining wall.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_035": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "General Urban Area",
+          "value": "YES"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "Highway 9 Bypass",
+          "value": "NO"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "General Urban Area",
+          "value": "YES",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.95,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_067": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "PASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_069": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "Sector 4 Underpass",
+          "value": "YES"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_032": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "5th Avenue",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "FLOODED",
+          "subject": "5th Avenue",
+          "value": "NO"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "FLOODED",
+          "subject": "5th Avenue",
+          "value": "NO",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "5th avenue",
+          "gold_value": "PASSABLE",
+          "predicted_value": "IMPASSABLE",
+          "prediction_method": "LEXICAL",
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "unresolved_spans": []
+    },
+    "eval_rep_071": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "5th Avenue",
+          "value": "MOVING"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_058": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Bridge Road",
+          "value": "PASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_073": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "Riverbank Colony",
+          "value": "ORDERED"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_059": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "IMPASSABLE"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_068": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "IMPASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "HIGH"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "HIGH",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_070": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "Sector 4 Underpass",
+          "value": "YES"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "sector 4 underpass",
+          "gold_value": "NO",
+          "predicted_value": "YES",
+          "prediction_method": "LEXICAL",
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "unresolved_spans": []
+    },
+    "eval_rep_012": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "Sector 4 Underpass",
+          "value": "YES"
+        },
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "General Urban Area",
+          "value": "NO"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "General Urban Area",
+          "value": "NO",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "sector 4 underpass",
+          "gold_value": "NO",
+          "predicted_value": "YES",
+          "prediction_method": "LEXICAL",
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "unresolved_spans": []
+    },
+    "eval_rep_072": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "5th Avenue",
+          "value": "STOPPED"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_074": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "EVACUATION",
+          "subject": "Riverbank Colony",
+          "value": "NOT_ORDERED"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Riverbank Colony reports evacuation not ordered, residents advised to shelter in place.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_029": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 1,
+      "semantic_claims": [
+        {
+          "claim_type": "PEOPLE_TRAPPED",
+          "subject": "Sector 4 Underpass",
+          "value": "NO",
+          "matched_exemplar_id": "exm_people_trapped_no_01",
+          "similarity_score": 0.7569184303283691,
+          "source_span": {
+            "start": 0,
+            "end": 52,
+            "text": "Sector 4 Underpass has no trapped people at present."
+          }
+        }
+      ],
+      "lexical_claims": [],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_014": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Market Square",
+          "value": "PASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "LOW"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Market Square",
+          "value": "LOW"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "LOW",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.85,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_027": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 0,
+      "semantic_claims": [],
+      "lexical_claims": [],
+      "false_negatives": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "PASSABLE"
+        }
+      ],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": [
+        {
+          "span_text": "Motorists can proceed without obstruction along Main Road now.",
+          "rejection_reason": "SEMANTIC_RESULT_REJECTED",
+          "top_candidates": []
+        }
+      ]
+    },
+    "eval_rep_076": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Main Road",
+          "value": "PASSABLE"
+        },
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "LOW"
+        }
+      ],
+      "false_negatives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Main Road",
+          "value": "LOW"
+        }
+      ],
+      "false_positives": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "General Urban Area",
+          "value": "LOW",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.85,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_080": {
+      "gold_claim_count": 2,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "WATER_LEVEL",
+          "subject": "Market Square",
+          "value": "LOW"
+        },
+        {
+          "claim_type": "TRAFFIC_STATUS",
+          "subject": "Market Square",
+          "value": "MOVING"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    },
+    "eval_rep_078": {
+      "gold_claim_count": 1,
+      "predicted_claim_count": 2,
+      "semantic_claims": [],
+      "lexical_claims": [
+        {
+          "claim_type": "ROAD_ACCESS",
+          "subject": "Sector 4 Underpass",
+          "value": "PASSABLE"
+        },
+        {
+          "claim_type": "FLOODED",
+          "subject": "Sector 4 Underpass",
+          "value": "NO"
+        }
+      ],
+      "false_negatives": [],
+      "false_positives": [
+        {
+          "claim_type": "FLOODED",
+          "subject": "Sector 4 Underpass",
+          "value": "NO",
+          "extraction_method": "LEXICAL",
+          "extraction_confidence": 0.9,
+          "matched_exemplar_id": null,
+          "similarity_score": null
+        }
+      ],
+      "value_mismatches": [],
+      "unresolved_spans": []
+    }
+  }
+}

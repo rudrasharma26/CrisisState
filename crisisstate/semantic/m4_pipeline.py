@@ -6,22 +6,38 @@ import re
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Tuple
 
-from crisisstate.domain.models import Claim, Report, UnresolvedSpan
-from crisisstate.domain.vocabulary import ClaimStatus, ExtractionMethod
-from crisisstate.engine.extractor import extract_claims, extract_entity
+from crisisstate.domain.models import (
+    Claim,
+    Report,
+    UnresolvedSpan,
+)
+from crisisstate.domain.vocabulary import (
+    ClaimStatus,
+    ExtractionMethod,
+)
+from crisisstate.engine.extractor import (
+    extract_claims,
+    extract_entity,
+)
 from crisisstate.semantic.adjudicator import SemanticAdjudicator
-from crisisstate.semantic.candidate_generator import SemanticCandidateGenerator
+from crisisstate.semantic.candidate_generator import (
+    SemanticCandidateGenerator,
+)
 
 
 @dataclass
 class M4PipelineResult:
     claims: List[Claim] = field(default_factory=list)
-    unresolved_spans: List[UnresolvedSpan] = field(default_factory=list)
-    audit_trail: List[Dict[str, Any]] = field(default_factory=list)
+    unresolved_spans: List[UnresolvedSpan] = field(
+        default_factory=list
+    )
+    audit_trail: List[Dict[str, Any]] = field(
+        default_factory=list
+    )
 
 
 class M4SemanticPipeline:
-    """Run semantic processing without modifying the production pipeline."""
+    """Run M4 without modifying the production pipeline."""
 
     _SPAN_RE = re.compile(r"[^.!?\n]+(?:[.!?]+|$)")
 
@@ -33,10 +49,44 @@ class M4SemanticPipeline:
         self.candidate_generator = candidate_generator
         self.adjudicator = adjudicator
 
-    def process_report(self, report: Report) -> M4PipelineResult:
+    def process_report(
+        self,
+        report: Report,
+    ) -> M4PipelineResult:
         result = M4PipelineResult()
 
-        for span_text, start, end in self._segment(report.text):
+        # ---------------------------------------------------------
+        # STEP 1: Preserve Phase 1 behavior exactly.
+        # ---------------------------------------------------------
+        lexical_claims = extract_claims(report)
+
+        lexical_claim_types = {
+            claim.claim_type.value
+            for claim in lexical_claims
+        }
+
+        for claim in lexical_claims:
+            result.claims.append(claim)
+
+            result.audit_trail.append(
+                {
+                    "source_span": None,
+                    "decision": "LEXICAL_PRESERVED",
+                    "claim_type": claim.claim_type.value,
+                    "value": claim.value,
+                    "rule_applied": (
+                        "PRESERVE_PHASE1_LEXICAL_CLAIM"
+                    ),
+                }
+            )
+
+        # ---------------------------------------------------------
+        # STEP 2: Semantic processing only for spans that were
+        # not lexically covered.
+        # ---------------------------------------------------------
+        for span_text, start, end in self._segment(
+            report.text
+        ):
             span_report = Report(
                 id=report.id,
                 text=span_text,
@@ -48,30 +98,12 @@ class M4SemanticPipeline:
                 metadata=report.metadata,
             )
 
-            lexical_claims = extract_claims(span_report)
+            span_lexical_claims = extract_claims(
+                span_report
+            )
 
-            source_span = {
-                "start": start,
-                "end": end,
-                "text": span_text,
-            }
-
-            if lexical_claims:
-                for claim in lexical_claims:
-                    claim.source_span = source_span
-
-                    result.claims.append(claim)
-
-                    result.audit_trail.append(
-                        {
-                            "source_span": source_span,
-                            "decision": "LEXICAL_PRESERVED",
-                            "claim_type": claim.claim_type.value,
-                            "value": claim.value,
-                            "rule_applied": "PRESERVE_PHASE1_LEXICAL_CLAIM",
-                        }
-                    )
-
+            # If Phase 1 recognizes this span, do not duplicate it.
+            if span_lexical_claims:
                 continue
 
             semantic_result = self.candidate_generator.generate(
@@ -79,18 +111,46 @@ class M4SemanticPipeline:
                 top_k=5,
             )
 
+            # Do not introduce a second claim of a type already
+            # produced by the frozen Phase 1 extractor.
+            candidates = semantic_result.get(
+                "candidates",
+                [],
+            )
+
+            candidates = [
+                candidate
+                for candidate in candidates
+                if candidate["claim_type"]
+                not in lexical_claim_types
+            ]
+
+            semantic_result = dict(semantic_result)
+            semantic_result["candidates"] = candidates
+
+            if not candidates:
+                semantic_result["status"] = "REJECTED"
+                semantic_result["reason"] = (
+                    "CLAIM_TYPE_ALREADY_ESTABLISHED_LEXICALLY"
+                    if lexical_claim_types
+                    else "NO_ADMISSIBLE_CANDIDATES"
+                )
+
             adjudication = self.adjudicator.adjudicate(
                 span_text,
                 semantic_result,
             )
 
+            source_span = {
+                "start": start,
+                "end": end,
+                "text": span_text,
+            }
+
             result.audit_trail.append(
                 {
                     "source_span": source_span,
-                    "semantic_candidates": semantic_result.get(
-                        "candidates",
-                        [],
-                    ),
+                    "semantic_candidates": candidates,
                     "adjudication": adjudication,
                 }
             )
@@ -103,51 +163,66 @@ class M4SemanticPipeline:
                     value=adjudication["value"],
                     timestamp=report.timestamp,
                     status=ClaimStatus.ACTIVE,
-                    confidence=adjudication["similarity_score"],
+                    confidence=adjudication[
+                        "similarity_score"
+                    ],
                     supporting_evidence=[report.id],
                     contradicting_evidence=[],
                     extraction_method=ExtractionMethod.SEMANTIC,
-                    extraction_confidence=adjudication["similarity_score"],
-                    matched_exemplar_id=adjudication["matched_exemplar_id"],
-                    similarity_score=adjudication["similarity_score"],
+                    extraction_confidence=adjudication[
+                        "similarity_score"
+                    ],
+                    matched_exemplar_id=adjudication[
+                        "matched_exemplar_id"
+                    ],
+                    similarity_score=adjudication[
+                        "similarity_score"
+                    ],
                     source_span=source_span,
                     candidate_values=[
-                        f"{candidate['claim_type']}:{candidate['value']}"
-                        for candidate in semantic_result.get(
-                            "candidates",
-                            [],
+                        (
+                            f"{candidate['claim_type']}:"
+                            f"{candidate['value']}"
                         )
+                        for candidate in candidates
                     ],
                 )
 
                 result.claims.append(claim)
 
-            else:
-                candidates = semantic_result.get("candidates", [])
-
-                unresolved = UnresolvedSpan(
-                    report_id=report.id,
-                    span_text=span_text,
-                    top_candidates=[
-                        {
-                            "claim_type": candidate["claim_type"],
-                            "value": candidate["value"],
-                            "score": candidate["similarity_score"],
-                        }
-                        for candidate in candidates
-                    ],
-                    rejection_reason=adjudication.get(
-                        "rule_applied",
-                        "UNRESOLVED",
-                    ),
+            elif semantic_result.get("status") != "REJECTED":
+                result.unresolved_spans.append(
+                    UnresolvedSpan(
+                        report_id=report.id,
+                        span_text=span_text,
+                        top_candidates=[
+                            {
+                                "claim_type": candidate[
+                                    "claim_type"
+                                ],
+                                "value": candidate[
+                                    "value"
+                                ],
+                                "score": candidate[
+                                    "similarity_score"
+                                ],
+                            }
+                            for candidate in candidates
+                        ],
+                        rejection_reason=adjudication.get(
+                            "rule_applied",
+                            "UNRESOLVED",
+                        ),
+                    )
                 )
-
-                result.unresolved_spans.append(unresolved)
 
         return result
 
     @classmethod
-    def _segment(cls, text: str) -> List[Tuple[str, int, int]]:
+    def _segment(
+        cls,
+        text: str,
+    ) -> List[Tuple[str, int, int]]:
         spans: List[Tuple[str, int, int]] = []
 
         for match in cls._SPAN_RE.finditer(text):
@@ -161,6 +236,12 @@ class M4SemanticPipeline:
             start = match.start() + leading
             end = start + len(stripped)
 
-            spans.append((stripped, start, end))
+            spans.append(
+                (
+                    stripped,
+                    start,
+                    end,
+                )
+            )
 
         return spans
