@@ -7,12 +7,12 @@
   "exemplar_count": 200,
   "report_count": 80,
   "m4_claim_extraction": {
-    "precision": 0.7386,
-    "recall": 0.6436,
-    "f1": 0.6878
+    "precision": 0.8182,
+    "recall": 0.7129,
+    "f1": 0.7619
   },
-  "m4_claim_normalization_accuracy": 0.9077,
-  "m4_modality_accuracy": 0.7692,
+  "m4_claim_normalization_accuracy": 0.9167,
+  "m4_modality_accuracy": 0.7778,
   "baseline_claim_extraction": {
     "precision": 0.8375,
     "recall": 0.6634,
@@ -21,15 +21,15 @@
   "baseline_claim_normalization_accuracy": 0.91,
   "baseline_modality_accuracy": 0.806,
   "delta": {
-    "precision": -0.0989,
-    "recall": -0.0198,
-    "f1": -0.0525,
-    "normalization_accuracy": -0.0023,
-    "modality_accuracy": -0.0368
+    "precision": -0.0193,
+    "recall": 0.0495,
+    "f1": 0.0216,
+    "normalization_accuracy": 0.0067,
+    "modality_accuracy": -0.0282
   },
-  "semantic_claims": 6,
-  "lexical_claims": 82,
-  "unresolved_spans": 18,
+  "semantic_claims": 8,
+  "lexical_claims": 80,
+  "unresolved_spans": 0,
   "determinism": "PASS",
   "incident_matching": "NOT_REEVALUATED \u2014 M4 remains isolated; production incident matcher is unchanged",
   "contradiction_detection": "NOT_REEVALUATED \u2014 M4 remains isolated; production contradiction engine is unchanged"
